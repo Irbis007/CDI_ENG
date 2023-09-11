@@ -1,22 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDI</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CDI</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="subheader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="info-wrapper">
+                                <div class="email">
+                                    <span class="email-left">
+                                        <div class="email-icon">
+                                            <i class="bi bi-envelope text-primary"></i>
+                                        </div>
+                                        <span>Mail:</span>
+                                    </span>
+                                    <a href="#" class="email-link">support@email.com</a>
+                                </div>
+                                <div class="phone">
+                                    <span class="phone-left">
+                                        <div class="phone-icon">
+                                            <i class="bi bi-telephone-fill"></i>
+                                        </div>
+                                        <span>Phone:</span>
+                                    </span>
+                                    <a href="#" class="phone-link">+123 456 78 90</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="header-links">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="header-socail"
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header-socail"
+                                            ><i class="bi bi-pinterest"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header-socail"
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                                <button class="header-button">Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-7">
+                            <div class="header-logo">
+                                <img src="./images/icons/logo.png" alt="logo" />
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1 col-sm-1">
+                            <nav class="header-nav">
+                                <ul class="list">
+                                    <li class="item">
+                                        <a href="#" class="link">Home</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="link">Pages</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="link">Portfolio</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="link">Service</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="link">Blog</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="link">Shop</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-sm-4 col-lg-2 offset-lg-1">
+                            <div class="header-circles">
+                                <div class="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="cart header-circle"><i class="bi bi-bag"></i></div>
+                                <div class="search header-circle"><i class="bi bi-search"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="animated">СDI – Университет независимых директоров</h1>
+                        <p class="animated">
+                            Комплексная программа, обеспечивающая профессиональную трансформацию и
+                            позволяющая перейти на стратегический уровень получения дохода и
+                            управления бизнесом
+                        </p>
+                        <p class="animated">
+                            Для тех, кто стремится зарабатывать действительно много и хочет поменять
+                            свою жизненную позицию. Статус независимого директора – неограниченные
+                            возможности для роста.
+                        </p>
+                        <button>contact us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="course">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="course-title">Кому подойдёт курс независимого директора?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="course-descr">
+                            Всем, кто хоть раз ходили на нетворкинг с целью узнать что-то новое от
+                            экспертов и расширить свой круг знакомств. Действуйте и планомерно
+                            развивайтее себя с помощью возможностей курса!
+                        </p>
+                        <p class="course-descr">
+                            Всем, кто нацелен на личностный рост и обладает активной жизненной
+                            позицией, хочет обрести возможность изменить своё жизненное положение.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="course-wrapper">
+                            <li class="course-clients">
+                                Менеджерам нелинейного типа, которые получают возможность круто
+                                вырасти
+                            </li>
+                            <li class="course-clients">Топ-менеджерам</li>
+                            <li class="course-clients">Собственникам бизнесов</li>
+                            <li class="course-clients">Наследникам</li>
+                            <li class="course-clients">
+                                НЕпредпринимателям (студентам, депутатам, людям, которые хотят
+                                развиваться)
+                            </li>
+                            <li class="course-clients">Всем, кто потребляет знания (эксперты)</li>
+                            <li class="course-clients">
+                                Людям, которые хотят увеличить доход, но не ищут проекты
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="knowledges">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="knowledges-wrapper">
+                            <div class="knowledge">
+                                <div class="knowledge-icon"></div>
+                                <div class="knowledge-body">
+                                    <div class="knowledge-title">
+                                        высокого дохода как по найму, так и в рамках собственного
+                                        бизнеса
+                                    </div>
+                                    <ul class="knowledge-list">
+                                        <li class="knowledge-item">
+                                            новый уровень и лучшее качество жизни
+                                        </li>
+                                        <li class="knowledge-item">
+                                            наследие и создание поколения "сильных"
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="knowledge">
+                                <div class="knowledge-icon"></div>
+                                <div class="knowledge-body">
+                                    <div class="knowledge-title">высокого социального статуса</div>
+                                    <ul class="knowledge-list">
+                                        <li class="knowledge-item">
+                                            авторитетность и отработанный навык лидера
+                                        </li>
+                                        <li class="knowledge-item">
+                                            новые возможности для поиска сообществ и комьюнити,
+                                            бизнес-клубов и мероприятий
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="knowledge">
+                                <div class="knowledge-icon"></div>
+                                <div class="knowledge-body">
+                                    <div class="knowledge-title">универсальной специальности</div>
+                                    <ul class="knowledge-list">
+                                        <li class="knowledge-item">
+                                            полезные навыки для реализации себя на посту управленца
+                                        </li>
+                                        <li class="knowledge-item">
+                                            экспертность, которая позволяет не совершать ошибок
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="knowledge">
+                                <div class="knowledge-icon"></div>
+                                <div class="knowledge-body">
+                                    <div class="knowledge-title">
+                                        безграничные возможности для дальнейшего развития
+                                    </div>
+                                    <ul class="knowledge-list">
+                                        <li class="knowledge-item">
+                                            обширная база знаний, подкреплённая собственной
+                                            практической отработкой
+                                        </li>
+                                        <li class="knowledge-item">
+                                            крепкие деловые связи и достойная база контактов
+                                        </li>
+                                        <li class="knowledge-item">
+                                            иное видение структуры бизнеса, отраслевых решений и
+                                            стратегии жизни
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="knowledges-title">
+                            По окончании курса вы станете обладателем:
+                        </div>
+                        <div class="knowledges-descr">
+                            Курс независимого директора нацелен прежде всего на личностный рост
+                            человека. Мы воспитываем единомышленников, которые хотят глубоко
+                            погрузиться в бизнес-процессы, расширить своё окружение и научиться
+                            проектному мышлению. Прохождение курса – это не только освоение всей
+                            системы лекций, а приобретение полного руководства к действию.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="expert">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="expert-tab">
+                            <div class="tab-buttons">
+                                <div class="tab-button active"></div>
+                                <div class="tab-button"></div>
+                                <div class="tab-button"></div>
+                                <div class="tab-button"></div>
+                                <div class="tab-button"></div>
+                                <div class="tab-button"></div>
+                                <div class="tab-button"></div>
+                                <div class="tab-button"></div>
+                            </div>
+                            <div class="tab-contents">
+                                <div class="tab-content active">
+                                    <img src="./images/expert-photo1.jpg" alt="expert" />
+                                </div>
+                                <div class="tab-content">
+                                    <img src="./images/expert-photo2.jpg" alt="expert" />
+                                </div>
+                                <div class="tab-content">
+                                    <img src="./images/expert-photo3.jpg" alt="expert" />
+                                </div>
+                                <div class="tab-content">
+                                    <img src="./images/expert-photo4.jpg" alt="expert" />
+                                </div>
+                                <div class="tab-content">
+                                    <img src="./images/expert-photo5.jpg" alt="expert" />
+                                </div>
+                                <div class="tab-content">
+                                    <img src="./images/expert-photo6.jpg" alt="expert" />
+                                </div>
+                                <div class="tab-content">
+                                    <img src="./images/expert-photo7.jpg" alt="expert" />
+                                </div>
+                                <div class="tab-content">
+                                    <img src="./images/expert-photo8.jpg" alt="expert" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="expert-title">Евгений Евтухов</div>
+                        <div class="expert-descr">
+                            Основатель курса. Предприниматель, инвестор, независимый директор,
+                            директор по развитию в компаниях с миллиардными оборотами.
+                        </div>
+                        <ul class="expert-cases">
+                            <li class="expert-case">
+                                Эксперт "Движения Эталонного Предпринимателя"
+                            </li>
+                            <li class="expert-case">
+                                Лидер интеллектуального кооператива "Альянс 78.2"
+                            </li>
+                            <li class="expert-case">
+                                Основатель и руководитель клуба “Группа развития бизнеса”
+                            </li>
+                            <li class="expert-case">Эксперт университета “Содействие”</li>
+                        </ul>
+                        <div class="expert-subdescr">
+                            Признанные эксперты в области корпоративного управления, предприниматели
+                            с многолетним опытом, владельцы крупных компаний, профессионалы и лидеры
+                            мнений.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <section class="intro">
-        <div class="container"></div>
-    </section>
-    <script src="./js/script.js"></script>
-</body>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="feedback-title"></div>
+                        <div class="tab-buttons">
+                            <div class="tab-button active">
+                                <img src="./images/feedback-photo1.jpg" alt="tab img" />
+                            </div>
+                            <div class="tab-button">
+                                <img src="./images/feedback-photo2.jpg" alt="tab img" />
+                            </div>
+                            <div class="tab-button">
+                                <img src="./images/feedback-photo3.jpg" alt="tab img" />
+                            </div>
+                        </div>
+                        <div class="tab-content_text active">
+                            <div class="feedback-text">
+                                Я считаю, что у каждого человека есть свой «Код Уникальности» (в чем
+                                он силён). И это обязательно нужно знать! Так вот, Евгений очень
+                                силён в том, чтобы находить возможности, встряхивать команду
+                                операционного бизнеса, прорабатывать стратегические направления
+                                развития, искать новые проекты. Являясь собственником компаний (29
+                                лет), я приглашаю Евгения в проектные группы, в которых проходят
+                                мозговые штурмы по стратегии развития компаний. Это очень эффективно
+                                для меня, так как появляется очень много вариантов. Так же, Евгений
+                                работает с моей группой развития по поиску новых проектов опираясь
+                                на ресурсы компании. Являясь Независимым директором, Евгений раз в
+                                месяц присутствует на встречах в моих компаниях, задавая команде
+                                вопросы на уточнение, и это помогает определить сильные и слабые
+                                стороны команды, помогает определить направление, на которое нужно
+                                обратить внимание. Вклад Евгения в варианты развития моей компании
+                                неоценим!
+                            </div>
+                            <div class="feedback-info_wrapper">
+                                <div class="feedback-icon">
+                                    <img src="./images/icons/quote.png" alt="quote" />
+                                </div>
+                                <div class="feedback-info">
+                                    <div class="feedback-name">Владимир Бохан</div>
+                                    <div class="feedback-position">
+                                        Предприниматель, инвестор, эксперт в области кооперации,
+                                        член правления сообществ и клубов
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content_text">
+                            <div class="feedback-text">
+                                Считаю, что сотрудничество с Евгением Евтуховым, принесло в нашу
+                                организацию огромную пользу. Благодаря чёткому взаимодействию мы
+                                достигли множества эффектов. Исследовали рынок и конкурентную среду,
+                                выявили дополнительные сегменты целевой аудитории, разработали
+                                уникальные мероприятия по повышению продаж. Евгением были
+                                профессионально организованы два мозговых штурма по развитию нашего
+                                бизнеса, что позволило нам оценить потенциал компании, зафиксировать
+                                массу интересных идей, выявить новые возможности и перспективные
+                                направления развития. Кроме того, Евгений прекрасно владеет
+                                инвестиционным проектированием, имеет опыт независимого директора,
+                                что также помогло нам сформировать объективный взгляд на
+                                существующие бизнес-процессы. Вне всяких сомнений в дальнейшем буду
+                                рад продолжить наше партнёрство.
+                            </div>
+                            <div class="feedback-info_wrapper">
+                                <div class="feedback-icon">
+                                    <img src="./images/icons/quote.png" alt="quote" />
+                                </div>
+                                <div class="feedback-info">
+                                    <div class="feedback-name">Станислав Донев</div>
+                                    <div class="feedback-position">
+                                        Предприниматель, инвестор, общественный деятель
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content_text">
+                            <div class="feedback-text">
+                                Знакомство, общение и деловое сотрудничество с Евгением Евтуховым
+                                приносит мне большую пользу. Я многому учусь у него. В моих глазах
+                                Евгений это человек-генератор, непрерывно вырабатывающий позитивную
+                                энергию, от которой можно буквально "подзаряжать" позитивным и
+                                деятельным, активным отношением к жизни и к бизнесу даже просто
+                                находясь с ним рядом. Он обладает большим багажом знаний и навыков в
+                                вопросах организации бизнеса, развития бизнеса, увеличения продаж и
+                                поэтому чрезвычайно полезен как бизнес-консультант.
+                            </div>
+                            <div class="feedback-info">
+                                <div class="feedback-icon">
+                                    <img src="./images/icons/quote.png" alt="quote" />
+                                </div>
+                                <div class="feedback-info_wrapper">
+                                    <div class="feedback-name">Николай Некрасов</div>
+                                    <div class="feedback-position">
+                                        Предприниматель, руководитель компании “БЭНЦ”
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tab-contents">
+                            <div class="tab-content_img active">
+                                <img src="./images/feedback-photo1.jpg" alt="feedback" />
+                            </div>
+                            <div class="tab-content_img">
+                                <img src="./images/feedback-photo2.jpg" alt="feedback" />
+                            </div>
+                            <div class="tab-content_img">
+                                <img src="./images/feedback-photo3.jpg" alt="feedback" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="packages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-wrapper">
+                            <div class="package-title">Начальный</div>
+                            <ul class="package-list">
+                                <li class="package-item">
+                                    доступ к материалам (презентации, обучающие видео от экспертов,
+                                    чек-листы, гайды и др.)
+                                </li>
+                                <li class="package-item">
+                                    практическое задание по одному из направлений с видеоуроком
+                                </li>
+                            </ul>
+                            <div class="package-price">15 000 р.</div>
+                            <button class="package-button">place yourr order</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-wrapper">
+                            <div class="package-title">Полный</div>
+                            <ul class="package-list">
+                                <li class="package-item">
+                                    олный доступ к курсу (8 модулей, 5 направлений) со всеми
+                                    материалами
+                                </li>
+                                <li class="package-item">практические задания по всем модулям</li>
+                                <li class="package-item">сопровождение координатора</li>
+                                <li class="package-item">клуб выпускников</li>
+                                <li class="package-item">доступ к комьюнити</li>
+                                <li class="package-item">прямые эфиры</li>
+                                <li class="package-item">
+                                    возможность провести разбор бизнеса от эксперта
+                                </li>
+                            </ul>
+                            <div class="package-price">65 000 р.</div>
+                            <button class="package-button">place yourr order</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="package-wrapper">
+                            <div class="package-title">Офлайн</div>
+                            <ul class="package-list">
+                                <li class="package-item">
+                                    прохождение полного курса в офлайн-группе в Санкт-Петербурге
+                                </li>
+                                <li class="package-item">
+                                    возможность прямого общения с экспертами и наставниками, ответы
+                                    на наши вопросы, мотивация
+                                </li>
+                                <li class="package-item">
+                                    вступление в сообщества и клубы, помощь в их поиске
+                                </li>
+                                <li class="package-item">сопровождение координатора</li>
+                                <li class="package-item">
+                                    курс проходит параллельно с бизнесом, что эффективно для
+                                    выполнения практических заданий
+                                </li>
+                                <li class="package-item">лёгкий поиск союзников и партнёров</li>
+                            </ul>
+                            <div class="package-price">200 000 р.</div>
+                            <button class="package-button">place yourr order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="guarantees">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-8">
+                        <div class="guarantees-title">Гарантии</div>
+                        <div class="guarantees-descr">
+                            Мы гарантируем возврат полной суммы, если по окончании обучения на курсе
+                            вы не увидите результатов, а также если услуга вовсе не была оказана или
+                            была оказана ненадлежащим образом.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="guarantee-wrapper">
+                            <div class="guarantee-icon">
+                                <img src="./images/icons/support.png" alt="support" />
+                            </div>
+                            <div class="guarantee-body">
+                                <div class="guarantee-title">Поддержка</div>
+                                <div class="guarantee-descr">
+                                    Для нас важно, чтобы студенты курса видели свой рост уже в
+                                    процессе обучения, на самых ранних его этапах. Именно поэтому вы
+                                    можете рассчитывать на полную поддержку со стороны
+                                    преподавателей и координаторов: оперативная обратная связь,
+                                    консультации специалистов и возможность личных консультаций со
+                                    спикерами
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="guarantee-wrapper">
+                            <div class="guarantee-icon">
+                                <img src="./images/icons/quality.png" alt="quality" />
+                            </div>
+                            <div class="guarantee-body">
+                                <div class="guarantee-title">Качество</div>
+                                <div class="guarantee-descr">
+                                    Наши спикеры и создатели курса – практикующие эксперты и
+                                    предприниматели, которые создают новое изо дня в день. Они
+                                    делятся знаниями, потому что видят в вас своих единомышленников,
+                                    партнёров и союзников.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="guarantee-wrapper">
+                            <div class="guarantee-icon">
+                                <img src="./images/icons/result.png" alt="result" />
+                            </div>
+                            <div class="guarantee-body">
+                                <div class="guarantee-title">Результат</div>
+                                <div class="guarantee-descr">
+                                    Теория имеет смысл только тогда, когда её применяют на практике.
+                                    Вы получаете возможность примерить на себя роль независимого
+                                    директора и управленца уже в процессе обучения. Знания, которые
+                                    вы получите в рамках курса, позволят вам раскрыть новую версию
+                                    себя, научиться импровизировать, воспользоваться “социальным
+                                    лифтом” и поменять мышление.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="guarantee-wrapper">
+                            <div class="guarantee-icon">
+                                <img src="./images/icons/accept.png" alt="accept" />
+                            </div>
+                            <div class="guarantee-body">
+                                <div class="guarantee-title">Удобство</div>
+                                <div class="guarantee-descr">
+                                    Лекции и практические занятия проходят в онлайн-формате. Вы
+                                    получите доступ к удобной образовательной платформе, где найдете
+                                    все необходимы материалы: видео, записанные прямые эфиры,
+                                    презентации, памятки и гайды, списки литературы, разборы и
+                                    схемы. Мы не ограничиваем вас временем, но будем отслеживать
+                                    график прохождения, чтобы видеть прогресс и давать практические
+                                    задания в установленные сроки.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <ul class="faq-wrapper">
+                            <li class="question-wrapper">
+                                <div class="question">
+                                    <span>Как происходит оплата курса?</span>
+                                    <img src="./images/icons/plus.png" alt="plus" />
+                                </div>
+                                <div class="answer">
+                                    Можно. При нажатии на кнопку “Купить” вы будете перенаправлены
+                                    на страницу платёжной системы Prodamus. Это безопасно. Вы также
+                                    получите чек об оплате.
+                                </div>
+                            </li>
+                            <li class="question-wrapper">
+                                <div class="question">
+                                    <span>В каком виде я получу доступ?</span>
+                                    <img src="./images/icons/plus.png" alt="plus" />
+                                </div>
+                                <div class="answer">
+                                    В течение 10-20 минут после оплаты на указанный при оплате email
+                                    придёт вся необходимая информация о модулях курса. Там же вы
+                                    увидите все уроки, доступные вам, и сроки открытия новых.
+                                </div>
+                            </li>
+                            <li class="question-wrapper">
+                                <div class="question">
+                                    <span>Я не из России, могу ли я приобрести курс?</span>
+                                    <img src="./images/icons/plus.png" alt="plus" />
+                                </div>
+                                <div class="answer">
+                                    Да, вы можете оплатить через банковскую карту или по специальной
+                                    ссылке.
+                                </div>
+                            </li>
+                            <li class="question-wrapper">
+                                <div class="question">
+                                    <span>Безопасно ли оплачивать пластиковой картой?</span>
+                                    <img src="./images/icons/plus.png" alt="plus" />
+                                </div>
+                                <div class="answer">
+                                    Да, это абсолютно безопасно. У нас заключены договоры с
+                                    проверенными и надежными платежными системами, такими как
+                                    Тинькофф, Prodamus, Best2pay и другими, через которые и идет
+                                    прием платежей. Все они действуют в соответствии с
+                                    законодательством и контролируются органами финансового надзора.
+                                </div>
+                            </li>
+                            <li class="question-wrapper">
+                                <div class="question">
+                                    <span>Вы работаете официально?</span>
+                                    <img src="./images/icons/plus.png" alt="plus" />
+                                </div>
+                                <div class="answer">
+                                    Да. Все необходимые документы представлены в самом низу этой
+                                    страницы.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="faq-img">
+                            <img src="./images/faq.jpeg" alt="FAQ" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/script.js"></script>
+    </body>
 </html>

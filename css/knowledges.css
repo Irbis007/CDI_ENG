@@ -1,0 +1,107 @@
+
+.knowledges{
+    margin-top: 100px;
+}
+
+
+.knowledges-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.knowledge{
+    width: 220px;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.knowledge:nth-child(1){
+    background-image: linear-gradient(to left top, #ece1fd, #f0e9fe, #f4f0ff, #f9f8ff, #ffffff);
+}
+.knowledge:nth-child(2){
+    background-image: linear-gradient(to left top, #d9d5fa, #e3dffb, #eceafd, #f6f4fe, #ffffff);
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.knowledge:nth-child(3){
+    background-image: linear-gradient(to left top, #fde5fd, #fbecff, #faf3ff, #fcf9ff, #ffffff);
+}
+.knowledge:nth-child(4){
+    background-image: linear-gradient(to left top, #cefff1, #d6ffff, #e7fdff, #f7fdff, #ffffff);
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.knowledge-title{
+    font-weight: 700;
+}
+
+.knowledge-list{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.knowledge-item{
+    list-style:disc;
+    margin-left: 10px;
+}
+
+
+
+.knowledges-title{
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+.knowledges-descr{
+    font-size: 14px;
+}
+
+@media (max-width: 991px) {
+    .knowledges .row{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .knowledges-wrapper{
+        justify-content: center;
+    }
+    .knowledges-title{
+        font-size: 24px;
+        margin: 0;
+    }
+    .knowledge{
+        max-width: 300px;
+        width: 100%;
+        height: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .knowledge-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+    }
+    .knowledge-item{
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+    .knowledge{
+        max-width: 100%;
+        max-height: 200px;
+        justify-content: normal;
+    }
+    .knowledge:nth-child(2){
+        margin: 0;
+    }
+    .knowledge:nth-child(4){
+        margin: 0;
+    }
+
+}
+
+

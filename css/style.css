@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("./header.css");
+@import url("./intro.css");
+@import url('./course.css');
+@import url('./faq.css');
+@import url('./pakcages.css');
+@import url('./expert.css');
+@import url('./feedback.css');
+@import url('./knowledges.css');
+@import url('./guarantees.css');
+
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body button {
+    position: relative;
+    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    overflow: hidden !important;
+    
+    border-radius: 50px;
+    border: none;
+    
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 100;
+}
+
+button::after {
+    content: "";
+    background-image: linear-gradient(to right, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0px, -3em, 0px);
+    transform-origin: 0 100% 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+button:hover::after {
+    transform: rotateZ(0deg);
+
+    transition: all 0.2s;
+}

@@ -1,0 +1,148 @@
+
+.expert{
+    margin-top: 100px;
+}
+
+.expert-tab{
+    display: flex;
+    gap: 20px;
+}
+
+.expert-tab .tab-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expert-tab .tab-button{
+    width: 8px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: rgba(74, 162, 235, 0.881);
+    cursor: pointer;
+    transition: all .2s;
+}
+.expert-tab .tab-button.active{
+    height: 60px;
+    transition: all .2s;
+}
+
+.expert-tab .tab-content{
+    display: none;
+    height: 500px;
+}
+.expert-tab .tab-content.active{
+    display: block;
+}
+
+.expert-tab .tab-content img{
+    max-height: 100%;
+    width: 100%;
+}
+
+.expert-title{
+    font-size: 31px;
+    font-family: "Jost", sans-serif;
+}
+
+.expert-descr{
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: "Jost", sans-serif;
+}
+
+
+.expert-cases{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.expert-case{
+    font-size: 14px;
+}
+
+.expert-subdescr{
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .expert-tab .tab-contents{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .expert-tab .tab-content{
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+    .expert-tab .tab-content:nth-child(1) img, .expert-tab .tab-content:nth-child(2) img{
+        height: 200%;
+        max-height: 200%;
+        width: 120%;
+    }
+    .expert-tab .tab-content:nth-child(1) img{
+        margin-top: -50px;
+    }
+    .expert-tab .tab-content:nth-child(2) img{
+        margin-left: -40px;
+        margin-top: -80px;
+    }
+    .expert-cases{
+        gap: 10px;
+        margin-top: 15px;
+        padding-left: 20px;
+
+        text-align: center;
+    }
+    .expert-title{
+        text-align: center;
+    }
+    .expert-descr{
+        text-align: center;
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    .expert-subdescr{
+        text-align: center;
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .expert-tab .tab-contents{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    .expert-title{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .expert-cases{
+        font-size: 14px;
+    }
+    .expert-descr{
+        font-size: 14px;
+    }
+    .expert-subdescr{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:  576px) {
+    .expert-tab .tab-contents{
+        height: 100%;
+        max-height: 300px;
+        margin-left: 20px;
+    }
+    .expert-tab .tab-buttons{
+        position: absolute;
+        z-index: 100;
+    }
+}

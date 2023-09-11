@@ -1,0 +1,49 @@
+
+
+
+.guarantees{
+    margin-top: 100px;
+}
+
+.guarantees-title{
+    font-family: 'Jost', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+.guarantees-descr{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+.guarantee-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.guarantee-icon{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.guarantee-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.guarantee-title{
+    font-weight: 700;
+    text-align: center;
+}
+.guarantee-descr{
+    font-size: 12px;
+    text-align: center;
+}

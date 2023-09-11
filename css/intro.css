@@ -1,0 +1,69 @@
+.intro {
+    background: url("../images/intro-bg.jpg") center center / cover no-repeat;
+    position: relative;
+    top: -111px;
+    width: 100%;
+    padding: 275px 0 210px 0;
+    z-index: 1;
+}
+
+
+.intro h1, .intro p, .intro button{
+    transform: translateX(-100%);
+    opacity: 0;
+    animation-name: animated;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.intro h1 {
+    font-size: 60px;
+    color: #ffffff;
+    line-height: 75px;
+    letter-spacing: -0.76px;
+    margin-bottom: 12px;
+    font-family: 'Jost', sans-serif;
+
+    animation-delay: 0s;
+}
+ 
+.intro p{
+    color: #ffffff;
+    font-size: 18px;
+    animation-delay: .7s;
+}
+
+.intro button{
+    width: 195px;
+    height: 64px;
+    animation-delay: 1.4s;
+}
+
+@keyframes animated {
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .intro h1 {
+        font-size: 44px;
+        line-height: 120%;
+    }
+    .intro p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro h1 {
+        font-size: 26px;
+        line-height: 120%;
+    }
+    .intro p{
+        font-size: 12px;
+    }
+}
