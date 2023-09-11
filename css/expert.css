@@ -1,6 +1,6 @@
 
 .expert{
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .expert-tab{
@@ -115,6 +115,9 @@
 }
 
 @media (max-width: 767px) {
+    .expert{
+        margin-top: 100px;
+    }
     .expert-tab .tab-contents{
         width: 100%;
         height: 300px;
