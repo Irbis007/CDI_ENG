@@ -31,7 +31,9 @@
     color: #ffffff;
     font-size: 18px;
     animation-delay: .7s;
+    font-family: 'Jost', sans-serif;
 }
+
 
 .intro button{
     width: 195px;

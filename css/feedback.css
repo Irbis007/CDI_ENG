@@ -34,20 +34,6 @@
     border: 2px solid #1673ff;
 }
 
-
-
-.header-nav .link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 1px;
-    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
-    transition: all 0.2s;
-}
-
-
 .feedback .tab-button:nth-child(1) img{
     width: 200%;
     height: 100%;
@@ -68,10 +54,10 @@
 
 .feedback .tab-content_text{
     margin-top: 20px;
-    font-family: "Jost", sans-serif;
-    background-color: #ddf1ff;
     padding: 15px;
+    background-color: #ddf1ff;
     color: #838383;
+    font-family: "Jost", sans-serif;
 }
 
 .feedback-text{

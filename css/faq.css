@@ -4,33 +4,40 @@
 }
 
 .question-wrapper{
+    min-height: 45px;
     padding: 10px 5px;
     cursor: pointer;
-    min-height: 45px;
     user-select: none;
 }
+
 .question{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Jost', sans-serif;
 }
+
 .question img{
     width: 15px;
     height: 15px;
 }
+
 .answer{
     padding: 0 10px;
     margin-left: 10px;
     max-height: 0px;
+    background-color: #ddf1ff;
     overflow: hidden;
     transition: all .2s;
-    background-color: #ddf1ff;
+    font-family: 'Jost', sans-serif;
 }
+
 .question-wrapper.active .answer{
-    padding: 15px 10px;
     max-height: 300px;
-    transition: all .2s;
     margin: 10px 0 10px 0;
+    padding: 15px 10px;
+    transition: all .2s;
+    font-family: 'Jost', sans-serif;
 }
 
 .faq-img img{

@@ -12,10 +12,10 @@
 
 .knowledge{
     width: 220px;
-    font-family: 'Jost', sans-serif;
     font-size: 12px;
     border-radius: 10px;
     padding: 10px;
+    font-family: 'Jost', sans-serif;
 }
 .knowledge:nth-child(1){
     background-image: linear-gradient(to left top, #ece1fd, #f0e9fe, #f4f0ff, #f9f8ff, #ffffff);
@@ -55,9 +55,11 @@
     font-size: 32px;
     font-weight: 500;
     margin-top: 100px;
+    font-family: 'Jost', sans-serif;
 }
 .knowledges-descr{
     font-size: 14px;
+    font-family: 'Jost', sans-serif;
 }
 
 @media (max-width: 991px) {

@@ -123,6 +123,7 @@
     height: 54px;
     padding: 0;
     max-width: 170px;
+    border-radius: 0;
 }
 
 .header-button::after {
@@ -145,7 +146,6 @@
     width: 100%;
     height: 100%;
 }
-
 
 
 .header-nav .list {

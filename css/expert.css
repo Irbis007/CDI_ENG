@@ -62,11 +62,13 @@
 
 .expert-case{
     font-size: 14px;
+    font-family: 'Jost', sans-serif;
 }
 
 .expert-subdescr{
     max-width: 500px;
     margin-top: 20px;
+    font-family: 'Jost', sans-serif;
 }
 
 @media (max-width: 991px) {

@@ -16,15 +16,11 @@
     margin-bottom: 30px;
 }
 
-
-
-
-
 .package-title{
     font-size: 31px;
     font-weight: 700;
-    font-family: 'Jost', sans-serif;
     color: #3a1564;
+    font-family: 'Jost', sans-serif;
 }
 
 .package-list{
@@ -37,6 +33,7 @@
 .package-item{
     font-size: 14px;
     position: relative;
+    font-family: 'Jost', sans-serif;
 }
 .package-item::before{
     content: url('../images/icons/check.svg');
@@ -47,11 +44,12 @@
 
 .package-price{
     margin-top: auto;
-    font-size: 38px;
     font-weight: 800;
     text-align: center;
     margin-top: auto;
     color: #3a1564;
+    font-size: 38px;
+    font-family: 'Jost', sans-serif;
 }
 
 .package-button{
