@@ -2,7 +2,12 @@
 
 
 .guarantees{
-    margin-top: 100px;
+    background-image: url(../images/feedback-bg.png);
+    position: relative;
+    padding: 140px 0 138px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .guarantees-title{
@@ -20,8 +25,7 @@
 
 .guarantee-wrapper{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -39,11 +43,11 @@
 
 .guarantee-title{
     font-weight: 700;
-    text-align: center;
+    font-size: 20px;
+    color: #4f8aff;
     font-family: 'Jost', sans-serif;
 }
 .guarantee-descr{
     font-size: 12px;
-    text-align: center;
     font-family: 'Jost', sans-serif;
 }

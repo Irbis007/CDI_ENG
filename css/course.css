@@ -1,3 +1,8 @@
+
+.course{
+    background: url('../images/course-bg.png') center center / cover no-repeat;
+}
+
 .course-title {
     display: block;
     max-width: 600px;

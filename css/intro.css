@@ -1,5 +1,5 @@
 .intro {
-    background: url("../images/intro-bg.jpg") center center / cover no-repeat;
+    background: url("../images/intro-bg.jpg") center center/ cover  no-repeat;
     position: relative;
     top: -111px;
     width: 100%;

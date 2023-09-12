@@ -1,10 +1,6 @@
-
-
-.feedback{
+.feedback {
     margin-top: 100px;
 }
-
-
 
 .tab-content_text,
 .tab-content_img {
@@ -13,46 +9,45 @@
 .tab-content_text.active,
 .tab-content_img.active {
     display: block;
+    animation: animActive 1s;
 }
 
-
-.feedback .tab-buttons{
+.feedback .tab-buttons {
     display: flex;
     gap: 20px;
     border-bottom: 1px solid #e7e7e7;
     padding-bottom: 20px;
 }
 
-.feedback .tab-button{
+.feedback .tab-button {
     position: relative;
     width: 50px;
     height: 50px;
     overflow: hidden;
     border-radius: 50%;
 }
-.feedback .tab-button.active{
+.feedback .tab-button.active {
     border: 2px solid #1673ff;
 }
 
-.feedback .tab-button:nth-child(1) img{
+.feedback .tab-button:nth-child(1) img {
     width: 200%;
     height: 100%;
     position: absolute;
     left: -40px;
 }
-.feedback .tab-button:nth-child(2) img{
+.feedback .tab-button:nth-child(2) img {
     width: 100%;
     height: 100%;
     position: absolute;
 }
-.feedback .tab-button:nth-child(3) img{
+.feedback .tab-button:nth-child(3) img {
     width: 100%;
     height: 130%;
     position: absolute;
 }
 
-
-.feedback .tab-content_text{
+.feedback .tab-content_text {
     margin-top: 20px;
     padding: 15px;
     background-color: #ddf1ff;
@@ -60,46 +55,53 @@
     font-family: "Jost", sans-serif;
 }
 
-.feedback-text{
+.feedback-text {
     font-size: 12px;
 }
 
-.feedback-info_wrapper{
+.feedback-info_wrapper {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
 
-.feedback-icon{
+.feedback-icon {
     width: 30px;
     height: 30px;
     flex-shrink: 0;
 }
 
-.feedback-icon img{
+.feedback-icon img {
     width: 100%;
     height: 100%;
 }
 
-.feedback .tab-content_img img{
+.feedback .tab-content_img img {
     width: 100%;
 }
 
-.feedback-name{
+.feedback-name {
     font-weight: 700;
     color: #000;
 }
 
-.feedback-position{
+.feedback-position {
     font-size: 12px;
 }
 
-
-@media (max-width: 991px){
-    .feedback .tab-contents{
-        margin-top: 20px;
+@keyframes animActive {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
-
-
+@media (max-width: 991px) {
+    .feedback .tab-contents {
+        margin-top: 20px;
+    }
+}

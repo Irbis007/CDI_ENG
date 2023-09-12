@@ -1,5 +1,7 @@
 .packages{
     margin-top: 100px;
+    background-color: #e4f6ff;
+    padding: 102px 0 85px;
 }
 
 .packages .row > div{
@@ -10,10 +12,19 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-image: linear-gradient(-45deg, #fcf4d1, #fff1e0, #fff4f4, #fffaff, #ffffff);
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 30px;
     margin-bottom: 30px;
+}
+
+.package-col:nth-child(1) .package-wrapper{
+    background-image: linear-gradient(-45deg, #fde1f9, #fbe9fd, #faf1ff, #fbf8ff, #ffffff);
+}
+.package-col:nth-child(2) .package-wrapper{
+    background-image: linear-gradient(-45deg, #fcf4d1, #fff1e0, #fff4f4, #fffaff, #ffffff);
+}
+.package-col:nth-child(3) .package-wrapper{
+    background-image: linear-gradient(-45deg, #d4ceff, #dfdaff, #eae6ff, #f5f3ff, #ffffff);
 }
 
 .package-title{
