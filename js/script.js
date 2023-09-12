@@ -49,3 +49,11 @@ function removeActiveFeedback() {
         feedbackTabContentsText[i].classList.remove('active');
     };
 };
+
+
+const hamburger = document.querySelector('.hamburger')
+const headerNav = document.querySelector('.header-nav')
+
+hamburger.addEventListener('click', () =>{
+    headerNav.classList.toggle('active')
+})
