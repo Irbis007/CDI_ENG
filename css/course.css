@@ -16,6 +16,10 @@
     font-family: 'Jost', sans-serif;
 }
 
+.descr-wrapper{
+    margin-bottom: 40px;
+}
+
 .course-descr {
     display: block;
     max-width: 800px;
@@ -29,31 +33,54 @@
 }
 
 .course-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    position: relative;
+    padding: 40px 15px 56px;
+    border: 1px solid #e6e6e6;
+    height: 90%;
+    margin-bottom: 20px;
+    transition: all .2s;
 }
-
-
-.course-clients{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 200px;
-    max-width: 400px;
-    padding: 15px;
-    background: #0985f9d2;
-
-    border-radius: 5px;
-    font-size: 18px;
-    line-height: 140%;
+.course-wrapper:hover{
     color: #fff;
-    text-align: center;
-    font-family: 'Jost', sans-serif;
+    transition: all .2s;
+}
+.course-wrapper::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    transition: all .2s;
+    z-index: -1;
+}
+.course-wrapper:hover::after{
+    left: 0;
+    width: 100%;
+    transition: all .2s;
 }
 
+.course-icon{
+    height: 75px;
+}
+
+.course-text{
+    text-align: center;
+    margin-top: 28px;
+}
+
+.course-icon svg{
+    height: 100%;
+    width: 100%;
+    fill: #2b5ff4;
+    transition: all .2s;
+}
+
+.course-wrapper:hover .course-icon svg{
+    fill: #fff;
+    transition: all .2s;
+}
 
 @media (max-width: 991px) {
     .course-title{
