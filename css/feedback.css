@@ -29,7 +29,8 @@
     border-radius: 50%;
 }
 .feedback .tab-button.active {
-    border: 2px solid #1673ff;
+    border: 2px solid #fff;
+    filter: drop-shadow(0px 0px 6px #fff);
 }
 
 .feedback .tab-button:nth-child(1) img {
