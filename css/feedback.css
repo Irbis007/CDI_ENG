@@ -1,5 +1,7 @@
 .feedback {
     margin-top: 100px;
+    background: url("../images/feedback-bg.jpg") center center/ cover  no-repeat;
+    padding: 140px 0 138px;
 }
 
 .tab-content_text,
@@ -15,7 +17,7 @@
 .feedback .tab-buttons {
     display: flex;
     gap: 20px;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e742;
     padding-bottom: 20px;
 }
 
@@ -50,8 +52,8 @@
 .feedback .tab-content_text {
     margin-top: 20px;
     padding: 15px;
-    background-color: #ddf1ff;
-    color: #838383;
+    background-color: #ddf1ff35;
+    color: #ffffff;
     font-family: "Jost", sans-serif;
 }
 
@@ -82,7 +84,7 @@
 
 .feedback-name {
     font-weight: 700;
-    color: #000;
+    color: #fff;
 }
 
 .feedback-position {
