@@ -342,9 +342,6 @@
 }
 
 @media (max-width: 768px) {
-    .intro{
-        
-    }
     .subheader .info-wrapper {
         display: flex;
         flex-direction: column;

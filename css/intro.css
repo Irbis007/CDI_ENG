@@ -49,6 +49,9 @@
 
 
 @media (max-width: 767px) {
+    .intro{
+        background-position: right center;
+    }
     .intro h1 {
         font-size: 44px;
         line-height: 120%;
