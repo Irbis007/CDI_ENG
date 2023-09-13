@@ -1,6 +1,7 @@
 
 .course{
     background: url('../images/course-bg.png') center center / cover no-repeat;
+    margin-top: 100px;
 }
 
 .course-title {
