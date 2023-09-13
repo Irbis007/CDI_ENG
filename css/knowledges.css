@@ -11,20 +11,20 @@
 
 .knowledges-wrapper::before {
     content: "";
-    background: url("../images/icons/shape-2.png") center center / cover no-repeat;
-    width: 555px;
-    height: 600px;
+    background: url("../images/icons/shape-2.png") center center / contain no-repeat;
+    width: 800px;
+    height: 800px;
     position: absolute;
-    top: -80px;
-    left: -80px;
+    top: -34px;
+    left: -112px;
     z-index: -1;
     animation: shapeAnimation 4s infinite;
 }
 
 .knowledge {
-    width: 250px;
+    width: 295px;
     height: 300px;
-    padding: 30px 15px 40px;
+    padding: 30px 25px 40px;
     font-size: 12px;
     border-radius: 10px;
     font-family: "Jost", sans-serif;
@@ -47,7 +47,7 @@
 }
 
 .knowledge-title {
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 21px;
 }
@@ -63,6 +63,7 @@
 
 .knowledge-item {
     list-style: disc;
+    margin-top: 5px;
 }
 
 .knowledge:hover .knowledge-icon {
@@ -89,7 +90,7 @@
     font-size: 57px;
     font-weight: 500;
     margin-top: 100px;
-    line-height: 120%;
+    line-height: 100%;
     font-family: "Jost", sans-serif;
 }
 
