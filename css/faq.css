@@ -3,6 +3,14 @@
     margin-top: 100px;
 }
 
+.faq-title{
+    margin-bottom: 40px;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+}
+
 .question-wrapper{
     min-height: 45px;
     padding: 10px 5px;
@@ -40,10 +48,6 @@
     font-family: 'Jost', sans-serif;
 }
 
-.faq-img img{
-    display: block;
-    margin: 0 auto;
-}
 
 @media (max-width:767px) {
     .faq-img img{
