@@ -1,7 +1,7 @@
 
 .course{
-    background: url('../images/course-bg.png') center center / cover no-repeat;
-    margin-top: 100px;
+    background: url('../images/course-bg.png') no-repeat center top;
+    padding: 100px 0 ;
 }
 
 .course-title {

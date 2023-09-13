@@ -1,177 +1,269 @@
-
-.expert{
+.expert {
     position: relative;
     margin-top: 120px;
-    background: url(../images/icons/1.png) no-repeat center left;
+    background: url("../images/icons/1.png") no-repeat center left;
 }
 
 .expert::after {
     position: absolute;
     right: 0;
     top: 5%;
-    content: '';
-    background: url(../images/icons/2.png) no-repeat center right;
-    width: 176px;  
+    content: "";
+    background: url("../images/icons/2.png") no-repeat center right;
+    width: 176px;
     height: 558px;
     z-index: -1;
 }
 
-.expert-tab{
+.expert-tab {
     display: flex;
     gap: 20px;
 }
 
-.expert-tab .tab-buttons{
+.expert-tab .tab-buttons {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.expert-tab .tab-button{
+.expert-tab .tab-button {
     width: 8px;
     height: 20px;
     border-radius: 4px;
     background-color: rgba(74, 162, 235, 0.881);
     cursor: pointer;
-    transition: all .2s;
+    transition: all 0.2s;
 }
-.expert-tab .tab-button.active{
+.expert-tab .tab-button.active {
     height: 60px;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
-.expert-tab .tab-content{
+.expert-tab .tab-content {
     display: none;
     height: 500px;
 }
-.expert-tab .tab-content.active{
+.expert-tab .tab-content.active {
     display: block;
-    animation: animActive 1s  ;
+    animation: animActive 1s;
 }
 
-.expert-tab .tab-content img{
+.expert-tab .tab-content img {
     max-height: 100%;
     width: 100%;
 }
 
-.expert-title{
+.expert-subtitle {
+    width: max-content;
+    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    background-clip: text;
+    font-size: 20px;
+    color: transparent;
+    font-family: "Jost", sans-serif;
+}
+
+.expert-descr {
+    margin-top: 8px;
+    line-height: 110%;
+    font-family: "Jost", sans-serif;
+}
+
+.expert-title {
+    margin-top: 8px;
     font-size: 31px;
+    font-weight: 900;
+    line-height: 120%;
     font-family: "Jost", sans-serif;
 }
 
-.expert-descr{
-    max-width: 500px;
-    margin-top: 20px;
-    font-family: "Jost", sans-serif;
-}
-
-
-.expert-cases{
+.expert-cases {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-    padding-left: 30px;
+    gap: 1px;
 }
 
-.expert-case{
-    font-size: 14px;
-    font-family: 'Jost', sans-serif;
+.list-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(44, 44, 44);
+    line-height: 140%;
 }
 
-.expert-subdescr{
+.expert-case {
+    font-size: 17px;
+    font-family: "Jost", sans-serif;
+    position: relative;
+    padding-left: 23px;
+}
+
+.expert-case::before {
+    content: "";
+    display: block;
+    background: url("../images/icons/ring.png") center center / contain no-repeat;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 2px;
+    top: 7px;
+}
+
+.expert-subdescr {
     max-width: 500px;
     margin-top: 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.advances {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.advance {
+    position: relative;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.advance-number {
+    position: relative;
+    top: -10%;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: 700;
     font-family: 'Jost', sans-serif;
+    color: #8f49f9;
+}
+.advance-number::after {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: #ff006c;
+    border-radius: 50%;
+    content: "";
+    animation: halfBounce 2s infinite;
+    animation-delay: 0s;
+    animation-delay: 0.3s;
+}
+.advance:nth-child(2) .advance-number::after{
+    background: #e034ff;
+}
+.advance:nth-child(3) .advance-number::after{
+    background: #ffae00;
+}
+
+.advance-title {
+    font-weight: 700;
+    font-family: "Jost", sans-serif;
 }
 
 @keyframes animActive {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(10%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
+@keyframes halfBounce {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
+
 @media (max-width: 991px) {
-    .expert-tab .tab-contents{
+    .expert-tab .tab-contents {
         width: 100%;
         height: 400px;
         overflow: hidden;
     }
-    .expert-tab .tab-content{
+    .expert-tab .tab-content {
         position: relative;
         height: auto;
         width: 100%;
     }
-    .expert-tab .tab-content:nth-child(1) img, .expert-tab .tab-content:nth-child(2) img{
+    .expert-tab .tab-content:nth-child(1) img,
+    .expert-tab .tab-content:nth-child(2) img {
         height: 200%;
         max-height: 200%;
         width: 120%;
     }
-    .expert-tab .tab-content:nth-child(1) img{
+    .expert-tab .tab-content:nth-child(1) img {
         margin-top: -50px;
     }
-    .expert-tab .tab-content:nth-child(2) img{
+    .expert-tab .tab-content:nth-child(2) img {
         margin-left: -40px;
         margin-top: -80px;
     }
-    .expert-cases{
+    .expert-cases {
         gap: 10px;
         margin-top: 15px;
         padding-left: 20px;
-
-        text-align: center;
     }
-    .expert-title{
-        text-align: center;
-    }
-    .expert-descr{
-        text-align: center;
+    .expert-descr {
         margin-top: 10px;
         max-width: 100%;
     }
-    .expert-subdescr{
-        text-align: center;
+    .expert-subdescr {
         max-width: 100%;
     }
-    
 }
 
 @media (max-width: 767px) {
-    .expert{
+    .expert {
         margin-top: 100px;
     }
-    .expert-tab .tab-contents{
+    .expert-tab .tab-contents {
         width: 100%;
         height: 300px;
         overflow: hidden;
     }
-    .expert-title{
+    .expert-title {
         margin-top: 30px;
         font-size: 20px;
     }
-    .expert-cases{
+    .expert-cases {
         font-size: 14px;
     }
-    .expert-descr{
+    .expert-descr {
         font-size: 14px;
     }
-    .expert-subdescr{
+    .expert-subdescr {
         font-size: 14px;
     }
 }
 
-@media (max-width:  576px) {
-    .expert-tab .tab-contents{
+@media (max-width: 576px) {
+    .expert-tab .tab-contents {
         height: 100%;
         max-height: 300px;
         margin-left: 20px;
     }
-    .expert-tab .tab-buttons{
+    .expert-tab .tab-buttons {
         position: absolute;
         z-index: 100;
     }

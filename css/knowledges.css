@@ -1,6 +1,4 @@
-.knowledges {
-    margin-top: 100px;
-}
+
 
 .knowledges-wrapper {
     position: relative;
@@ -22,7 +20,7 @@
 }
 
 .knowledge {
-    width: 295px;
+    width: 47%;
     height: 300px;
     padding: 30px 25px 40px;
     font-size: 12px;
@@ -62,7 +60,6 @@
 }
 
 .knowledge-item {
-    list-style: disc;
     margin-top: 5px;
 }
 
@@ -145,6 +142,13 @@
     .knowledges-title {
         font-size: 42px;
     }
+    .knowledge-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .knowledge-item {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -177,9 +181,6 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 120%;
-    }
-    .knowledge-item {
-        font-size: 14px;
     }
     .knowledge-text{
         display: flex;
