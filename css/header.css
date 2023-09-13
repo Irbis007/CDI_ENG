@@ -1,5 +1,8 @@
 .header {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 165px;
     z-index: 100;
 }
@@ -339,6 +342,9 @@
 }
 
 @media (max-width: 768px) {
+    .intro{
+        
+    }
     .subheader .info-wrapper {
         display: flex;
         flex-direction: column;
