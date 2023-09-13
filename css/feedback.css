@@ -1,8 +1,11 @@
 .feedback {
+    position: relative;
     margin-top: 100px;
     background: url("../images/feedback-bg.jpg") center center   no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     padding: 140px 0 138px;
+    z-index: 1;
+    background-attachment: fixed;
 }
 
 .tab-content_text,
@@ -34,23 +37,10 @@
     filter: drop-shadow(0px 0px 6px #fff);
 }
 
-.feedback .tab-button:nth-child(1) img {
-    width: 200%;
-    height: 100%;
-    position: absolute;
-    left: -40px;
-}
-.feedback .tab-button:nth-child(2) img {
+.feedback .tab-button img {
     width: 100%;
     height: 100%;
-    position: absolute;
 }
-.feedback .tab-button:nth-child(3) img {
-    width: 100%;
-    height: 130%;
-    position: absolute;
-}
-
 .feedback .tab-content_text {
     margin-top: 20px;
     padding: 15px;

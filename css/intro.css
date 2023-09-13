@@ -2,7 +2,6 @@
     background: url("../images/intro-bg.jpg") center center/ cover  no-repeat;
     width: 100%;
     padding: 275px 0 210px 0;
-    z-index: 1;
 }
 
 
@@ -37,6 +36,7 @@
     width: 195px;
     height: 64px;
     animation-delay: 1.4s;
+    margin-top: 20px;
 }
 
 @keyframes animated {

@@ -28,6 +28,7 @@ body ul {
 body button {
     position: relative;
     background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    box-shadow: 0px 1px 54px 0px rgba(47, 84, 238, 0.46);
     overflow: hidden !important;
     
     border-radius: 50px;
