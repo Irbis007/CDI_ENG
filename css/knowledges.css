@@ -180,6 +180,10 @@
     .knowledge-item {
         font-size: 14px;
     }
+    .knowledge-text{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 @media (max-width: 767px) {
     .knowledge {
