@@ -1,4 +1,8 @@
-
+.knowledges{
+    position: relative;
+    background-image: linear-gradient(to right bottom, #070707, #3d3d3d);
+    padding: 140px 0;
+}
 
 .knowledges-wrapper {
     position: relative;
@@ -15,17 +19,19 @@
     position: absolute;
     top: -34px;
     left: -112px;
-    z-index: -1;
+    z-index: 1;
     animation: shapeAnimation 4s infinite;
 }
 
 .knowledge {
+    position: relative;
     width: 47%;
     height: 300px;
     padding: 30px 25px 40px;
     font-size: 12px;
     border-radius: 10px;
     font-family: "Jost", sans-serif;
+    z-index: 100;
 }
 .knowledge:nth-child(1) {
     background-image: linear-gradient(to left top, #ece1fd, #f0e9fe, #f4f0ff, #f9f8ff, #ffffff);
@@ -84,16 +90,24 @@
 }
 
 .knowledges-title {
-    font-size: 57px;
+    font-size: 32px;
     font-weight: 500;
     margin-top: 100px;
     line-height: 100%;
     font-family: "Jost", sans-serif;
+    color: white;
 }
 
 .knowledges-descr {
     font-size: 14px;
     font-family: "Jost", sans-serif;
+    color: white;
+    margin-top: 20px;
+}
+
+.knowledges-button{
+    padding: 26px 50px;
+    margin-top: 30px;
 }
 
 @keyframes shapeAnimation {
