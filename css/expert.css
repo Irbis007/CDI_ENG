@@ -130,7 +130,6 @@
 .advance-number {
     position: relative;
     top: -10%;
-    left: 0;
 
     display: flex;
     justify-content: center;
