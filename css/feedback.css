@@ -59,7 +59,8 @@
 }
 
 .feedback-text {
-    font-size: 12px;
+    font-size: 19px;
+    line-height: 24px;
 }
 
 .feedback-info_wrapper {
@@ -86,10 +87,11 @@
 .feedback-name {
     font-weight: 700;
     color: #fff;
+    font-size: 22px;
 }
 
 .feedback-position {
-    font-size: 12px;
+    font-size: 19px;
 }
 
 @keyframes animActive {

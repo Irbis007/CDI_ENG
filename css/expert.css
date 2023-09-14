@@ -65,12 +65,13 @@
 .expert-descr {
     margin-top: 8px;
     line-height: 110%;
+    font-size: 19px;
     font-family: "Jost", sans-serif;
 }
 
 .expert-title {
     margin-top: 8px;
-    font-size: 31px;
+    font-size: 35px;
     font-weight: 900;
     line-height: 120%;
     font-family: "Jost", sans-serif;
@@ -83,14 +84,15 @@
 }
 
 .list-title {
-    font-size: 18px;
+    margin-bottom: 5px;
+    font-size: 19px;
     font-weight: 500;
     color: rgb(44, 44, 44);
     line-height: 140%;
 }
 
 .expert-case {
-    font-size: 17px;
+    font-size: 19px;
     font-family: "Jost", sans-serif;
     position: relative;
     padding-left: 23px;
@@ -107,11 +109,6 @@
     top: 7px;
 }
 
-.expert-subdescr {
-    max-width: 500px;
-    margin-top: 20px;
-    font-family: "Jost", sans-serif;
-}
 
 .advances {
     display: flex;

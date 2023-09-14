@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 19px;
     font-family: 'Jost', sans-serif;
 }
 
@@ -37,6 +38,7 @@
     background-color: #ddf1ff;
     overflow: hidden;
     transition: all .2s;
+    font-size: 19px;
     font-family: 'Jost', sans-serif;
 }
 

@@ -27,10 +27,8 @@
     position: relative;
     width: 47%;
     height: 300px;
-    padding: 30px 25px 40px;
-    font-size: 12px;
+    padding: 20px 25px 40px;
     border-radius: 10px;
-    font-family: "Jost", sans-serif;
     z-index: 100;
 }
 .knowledge:nth-child(1) {
@@ -51,7 +49,7 @@
 }
 
 .knowledge-title {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 700;
     line-height: 21px;
 }
@@ -60,13 +58,17 @@
 }
 
 .knowledge-list {
-    margin-top: 15px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
 }
 
 .knowledge-item {
     margin-top: 5px;
+    font-size: 15px;
+    line-height: 16px;
+    font-family: "Jost", sans-serif;
+    list-style:disc;
 }
 
 .knowledge:hover .knowledge-icon {
@@ -94,13 +96,13 @@
     width: max-content;
     background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
     background-clip: text;
-    font-size: 20px;
+    font-size: 23px;
     color: transparent;
     font-family: "Jost", sans-serif;
 }
 
 .knowledges-title {
-    font-size: 32px;
+    font-size: 35px;
     font-weight: 500;
     margin-top: 15px;
     line-height: 100%;
@@ -109,7 +111,7 @@
 }
 
 .knowledges-descr {
-    font-size: 14px;
+    font-size: 19px;
     font-family: "Jost", sans-serif;
     color: white;
     margin-top: 20px;
