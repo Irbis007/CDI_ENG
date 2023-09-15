@@ -1,0 +1,59 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body button {
+    position: relative;
+    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    box-shadow: 0px 1px 54px 0px rgba(47, 84, 238, 0.46);
+    overflow: hidden !important;
+    width: max-content;
+    padding: 26px 50px;
+    
+    border-radius: 50px;
+    border: none;
+    
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 100;
+}
+
+button::after {
+    content: "";
+    background-image: linear-gradient(to right, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0px, -3em, 0px);
+    transform-origin: 0 100% 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+button:hover::after {
+    transform: rotateZ(0deg);
+
+    transition: all 0.2s;
+}
+
+@media (max-width: 767px) {
+    body button{
+        padding: 20px 20px;
+    }
+}
