@@ -56,36 +56,6 @@
     color: #3946ea;
 }
 
-.instagram-images{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
-    margin-top: 25px;
-}
-
-.instagram-image{
-    width: 70px;
-    height: 70px;
-}
-
-.instagram-image img{
-    width: 100%;
-    height: 100%;
-}
-
-.instagram-link{
-    display: flex;
-    gap: 4px;
-    margin-top: 25px;
-    color: #9c26b0;
-    font-family: 'Jost', sans-serif;
-}
-
-.instagram-link img{
-    width: 22px;
-    height: 22px;
-}
-
 .contact-text{
     color: #fff;
     font-family: 'Jost', sans-serif;
@@ -111,16 +81,7 @@
 }
 
 
-.subfooter{
-    padding: 30px 0 40px 0;
-    text-align: center;
-}
-
-.subfooter span{
-    color: #fff;
-}
-
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .footer-title{
         margin-top: 60px;
     }
