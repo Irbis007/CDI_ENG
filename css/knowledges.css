@@ -102,7 +102,7 @@
 }
 
 .knowledges-title {
-    font-size: 35px;
+    font-size: 42px;
     font-weight: 500;
     margin-top: 15px;
     line-height: 100%;
@@ -118,7 +118,6 @@
 }
 
 .knowledges-button{
-    padding: 26px 50px;
     margin-top: 30px;
 }
 
@@ -165,9 +164,7 @@
 }
 
 @media (max-width: 1200px) {
-    .knowledges-title {
-        font-size: 42px;
-    }
+
     .knowledge-icon {
         width: 40px;
         height: 40px;
@@ -178,6 +175,9 @@
 }
 
 @media (max-width: 991px) {
+    .knowledges-title {
+        font-size: 34px;
+    }
     .knowledges .row {
         flex-direction: column-reverse;
         gap: 30px;
@@ -193,7 +193,19 @@
     }
     .knowledges-title {
         font-size: 40px;
-        margin: 0;
+        margin: 20px 0 0 0 ;
+        order: 1;
+    }
+    .knowledges-descr{
+        order: 2;
+        font-size: 17px;
+    }
+    .knowledges-subtitle{
+        margin-top: 20px;
+        order: 4;
+    }
+    .knowledges-button{
+        order: 3;
     }
     .knowledge {
         max-width: 300px;
@@ -205,13 +217,17 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 120%;
+        margin-top: 20px;
     }
     .knowledge-text{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
 @media (max-width: 767px) {
+    .knowledges-title {
+        font-size: 28px;
+    }
     .knowledge {
         flex-direction: column;
         align-items: start;
@@ -229,4 +245,8 @@
     .knowledges-wrapper::before {
         display: none;
     }
+    .knowledges-descr {
+        font-size: 15px;
+    }
+    
 }

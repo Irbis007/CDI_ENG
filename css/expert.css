@@ -220,12 +220,13 @@
         margin-top: 15px;
         padding-left: 20px;
     }
+    .expert-case {
+        font-size: 16px;
+    }
     .expert-descr {
         margin-top: 10px;
         max-width: 100%;
-    }
-    .expert-subdescr {
-        max-width: 100%;
+        font-size: 17px;
     }
 }
 
@@ -242,14 +243,14 @@
         margin-top: 30px;
         font-size: 20px;
     }
-    .expert-cases {
-        font-size: 14px;
+    .expert-case {
+        font-size: 15px;
     }
     .expert-descr {
-        font-size: 14px;
+        font-size: 15px;
     }
-    .expert-subdescr {
-        font-size: 14px;
+    .knowledges-subtitle{
+        margin-top: 20px;
     }
 }
 

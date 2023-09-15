@@ -49,3 +49,27 @@
     font-size: 19px;
     font-family: 'Jost', sans-serif;
 }
+
+@media (max-width: 991px) {
+    .guarantees-title{
+        font-size: 34px;
+    }
+    .guarantees-descr{
+        font-size: 17px;
+    }
+    .guarantee-descr{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .guarantees-title{
+        font-size: 28px;
+    }
+    .guarantees-descr{
+        font-size: 15px;
+    }
+    .guarantee-descr{
+        font-size: 15px;
+    }
+}

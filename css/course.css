@@ -36,6 +36,9 @@
 
 .courses-wrapper{
     position: relative;
+}
+
+.courses-hidden{
     overflow: hidden;
 }
 
@@ -50,7 +53,7 @@
 .course-arrow{
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: -30px;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -65,7 +68,7 @@
 
 .course-arrow.prev{
     transform: rotate(180deg);
-    left: 10px;
+    left: -30px;
 }
 
 .course-arrow::after, .course-arrow::before{
@@ -99,17 +102,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     flex-shrink: 0;
-    width: 25%;
+    width: 25% ;
     height: auto;
-    margin-bottom: 20px;
-    padding: 40px 15px 56px;
+    margin: 15px 0;
+    padding: 15px 8px 20px;
     transition: all .2s;
 }
 
 .course-wrapper:hover{
-    box-shadow: 0px 0px 20px #888;
+    box-shadow: 0px 0px 15px #888;
     transition: all .2s;
 }
 
@@ -126,7 +128,7 @@
 .course-text{
     margin-top: 28px;
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 20px;
 }
 
@@ -144,15 +146,18 @@
 
 @media (max-width: 991px) {
     .course-title{
-        font-size: 32px;
+        font-size: 34px;
     }
     .course-descr{
-        font-size: 14px;
+        font-size: 17px;
     }
     .course-clients{
         padding: 8px;
         font-size: 16px;
         max-width: 300px;
+    }
+    .course-wrapper{
+        width: 33%;
     }
 }
 
@@ -161,24 +166,48 @@
     .course-wrapper{
         gap: 9px;
     }
+    .course-title{
+        font-size: 28px;
+    }
     .course-clients{
         padding: 8px;
         font-size: 14px;
         max-width: 100%;
     }
-}
-
-@media (max-width: 576px) {
-    .course-title{
-        font-size: 31px;
+    .course-wrapper{
+        width: 50%;
     }
     .course-descr{
-        font-size: 14px;
+        font-size: 15px;
+    }
+    .course-text{
+        font-size: 15px;
+        line-height: 18px;
     }
 }
 
 @media (max-width: 480px) {
     .course-clients{
         width: 100%;
+    }
+    .courses-wrapper{
+        padding: 0 30px;
+    }
+    .course-wrapper{
+        width: 100%;
+        padding: 15px;
+        margin: 15px;
+    }
+    .course-arrow{
+        right: 0;
+    }
+    .course-arrow.prev{
+        left: 0;
+    }
+    .course-text{
+        font-size: 13px;
+    }
+    .course-text span{
+        font-size: 11px;
     }
 }

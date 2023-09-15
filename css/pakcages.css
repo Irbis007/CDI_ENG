@@ -76,3 +76,27 @@
     margin: 0 auto;
     margin-top: 20px;
 }
+
+@media (max-width: 991px) {
+    .packages-title{
+        font-size: 34px;
+    }
+    .package-item{
+        font-size: 17px;
+    }
+    .package-price{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .packages-title{
+        font-size: 28px;
+    }
+    .package-item{
+        font-size: 15px;
+    }
+    .package-price{
+        font-size: 24px;
+    }
+}

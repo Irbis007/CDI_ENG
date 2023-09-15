@@ -106,7 +106,32 @@
 }
 
 @media (max-width: 991px) {
+    .feedback-title{
+        font-size: 34px;
+        margin-bottom: 34px;
+    }
     .feedback .tab-contents {
         margin-top: 20px;
+    }
+    .feedback-text{
+        font-size: 17px;
+    }
+    .feedback-name {
+        font-size: 19px;
+    }
+    .feedback-position {
+        font-size: 17px;
+    }
+}
+@media (max-width: 767px) {
+    .feedback-title{
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+    .feedback-text{
+        font-size: 15px;
+    }
+    .feedback-position {
+        font-size: 15px;
     }
 }

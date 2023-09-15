@@ -31,6 +31,7 @@ body button {
     box-shadow: 0px 1px 54px 0px rgba(47, 84, 238, 0.46);
     overflow: hidden !important;
     width: max-content;
+    padding: 26px 50px;
     
     border-radius: 50px;
     border: none;
@@ -61,4 +62,10 @@ button:hover::after {
     transform: rotateZ(0deg);
 
     transition: all 0.2s;
+}
+
+@media (max-width: 767px) {
+    body button{
+        padding: 20px 20px;
+    }
 }

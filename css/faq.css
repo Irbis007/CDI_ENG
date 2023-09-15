@@ -1,58 +1,73 @@
-
-.faq{
+.faq {
     margin-top: 100px;
 }
 
-.faq-title{
-    margin-bottom: 40px;
+.faq-title {
+    margin-bottom: 42px;
     font-size: 42px;
     text-align: center;
     font-weight: 600;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
-.question-wrapper{
+.question-wrapper {
     min-height: 45px;
     padding: 10px 5px;
     cursor: pointer;
     user-select: none;
 }
 
-.question{
+.question {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 19px;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
-.question img{
+.question img {
     width: 15px;
     height: 15px;
 }
 
-.answer{
+.answer {
     padding: 0 10px;
     margin-left: 10px;
     max-height: 0px;
     background-color: #ddf1ff;
     overflow: hidden;
-    transition: all .2s;
+    transition: all 0.2s;
     font-size: 19px;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
-.question-wrapper.active .answer{
+.question-wrapper.active .answer {
     max-height: 300px;
     margin: 10px 0 10px 0;
     padding: 15px 10px;
-    transition: all .2s;
-    font-family: 'Jost', sans-serif;
+    transition: all 0.2s;
+    font-family: "Jost", sans-serif;
 }
 
-
-@media (max-width:767px) {
-    .faq-img img{
-        margin-top: 30px;
-    }    
+@media (max-width: 991px) {
+    .faq-title {
+        font-size: 34px;
+    }
+    .question {
+        font-size: 17px;
+    }
+    .answer{
+        font-size: 17px;
+    }
+}
+@media (max-width: 767px) {
+    .faq-title {
+        font-size: 28px;
+    }
+    .question {
+        font-size: 15px;
+    }
+    .answer{
+        font-size: 15px;
+    }
 }

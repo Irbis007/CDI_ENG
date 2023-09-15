@@ -92,24 +92,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const arrowPrev = document.querySelector(".course-arrow.prev");
     const arrowNext = document.querySelector(".course-arrow.next");
-    
+
+    let stepWidth;
+
+    if (window.innerWidth > 991) {
+        stepWidth = sliderItem[0].clientWidth + 40;
+    } else if (window.innerWidth > 767 && window.innerWidth < 991) {
+        stepWidth = sliderItem[0].clientWidth + 30;
+    } else if (window.innerWidth > 576 && window.innerWidth < 767) {
+        stepWidth = sliderItem[0].clientWidth + 20;
+    } else if (window.innerWidth < 576) {
+        stepWidth = sliderItem[0].clientWidth + 18 + 33;
+    }
+
     let sliderStep = 0;
 
-    arrowPrev.addEventListener('click', ()=>{
-        if(sliderStep > 0){
-            sliderStep--
-        }
-        sliderWrapper.style.transform = `translateX(${-sliderStep*300}px)`
-        console.log(sliderStep)
-    })
-    
-    arrowNext.addEventListener('click', ()=>{
-        if(sliderStep <= sliderItem.length -5){
-            sliderStep++
-        }
-        sliderWrapper.style.transform = `translateX(${-sliderStep*300}px)`
-        console.log(sliderStep)
-    })
+    console.log(stepWidth);
 
+    arrowPrev.addEventListener("click", () => {
+        if (sliderStep > 0) {
+            sliderStep--;
+        }
+        sliderWrapper.style.transform = `translateX(${-sliderStep * stepWidth}px)`;
+    });
 
+    arrowNext.addEventListener("click", () => {
+        if (window.innerWidth > 991) {
+            if (sliderStep <= sliderItem.length - 5) {
+                sliderStep++;
+            }
+        } else if (window.innerWidth > 767 && window.innerWidth < 991) {
+            if (sliderStep <= sliderItem.length - 4) {
+                sliderStep++;
+            }
+        } else if (window.innerWidth > 576 && window.innerWidth < 767) {
+            if (sliderStep <= sliderItem.length - 3) {
+                sliderStep++;
+            }
+        } else if (window.innerWidth < 576) {
+            if (sliderStep <= sliderItem.length - 2) {
+                sliderStep++;
+            }
+        }
+        sliderWrapper.style.transform = `translateX(${-sliderStep * stepWidth}px)`;
+    });
 });

@@ -4,7 +4,6 @@
     padding: 275px 0 210px 0;
 }
 
-
 .intro h1, .intro p, .intro button{
     transform: translateX(-100%);
     opacity: 0;
@@ -31,10 +30,23 @@
     font-family: 'Jost', sans-serif;
 }
 
+.intro-mobile{
+    display: none;
+    max-width: 400px;
+    margin:  40px -15px 0 auto;
+    transform: scale(0);
+    animation-name: introImgAnimated;
+    animation-delay: 1.4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.intro-mobile img{
+    width: 100%;
+}
+
 
 .intro button{
-    width: 195px;
-    height: 64px;
     animation-delay: 1.4s;
     margin-top: 20px;
 }
@@ -46,27 +58,42 @@
     }
 }
 
+@keyframes introImgAnimated {
+    100%{
+        transform: scale(1);
+    }
+}
 
+
+@media (max-width: 991px) {
+    .intro{
+        background-position: right center;
+        padding: 200px 0 170px 0;
+    }
+}
 
 @media (max-width: 767px) {
     .intro{
-        background-position: right center;
+        padding: 150px 0 130px 0;
     }
     .intro h1 {
         font-size: 44px;
         line-height: 120%;
     }
     .intro p{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 576px) {
+    .intro{
+        background-position: left center;
+    }
     .intro h1 {
         font-size: 26px;
         line-height: 120%;
     }
-    .intro p{
-        font-size: 12px;
+    .intro-mobile{
+        display: block;
     }
 }
