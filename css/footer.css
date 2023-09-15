@@ -35,8 +35,6 @@
 .social-icon{
     width: 35px;
     height: 35px;
-    background-color: #fff;
-    border-radius: 50%;
 }
 
 .social-icon img{
@@ -56,22 +54,6 @@
 
 .footer-point{
     color: #3946ea;
-}
-
-.footer-twitter{
-    display: flex;
-    gap: 10px;
-    margin-top: 25px;
-}
-
-.twitter-body{
-    font-size: 18px;
-    font-family: 'Jost', sans-serif;
-}
-
-.twitter-link{
-    color: #999;
-    text-decoration: none;
 }
 
 .instagram-images{
