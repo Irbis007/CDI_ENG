@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    // QUESTION ACCARDEON
     const questionWrapper = document.querySelectorAll(".question-wrapper");
 
     questionWrapper.forEach((item, i) => {
@@ -7,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+
+    // EXPERT TAB
     const expertTabButtons = document.querySelectorAll(".expert .tab-button");
     const expertTabContents = document.querySelectorAll(".expert .tab-content");
 
@@ -25,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+
+    // FEEDBACK TAB
     const feedbackTabButtons = document.querySelectorAll(".feedback .tab-button");
     const feedbackTabContentsImg = document.querySelectorAll(".feedback .tab-content_img");
     const feedbackTabContentsText = document.querySelectorAll(".feedback .tab-content_text");
@@ -46,6 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+
+    // NUMBER ANIMATION
     const hamburger = document.querySelector(".hamburger");
     const headerNav = document.querySelector(".header-nav");
 
@@ -87,6 +95,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver(handleIntersection);
     observer.observe(advances);
 
+
+
+    // SLIDER
     const sliderWrapper = document.querySelector(".course-window");
     const sliderItem = document.querySelectorAll(".course-wrapper");
 
