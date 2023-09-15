@@ -19,11 +19,6 @@
     width: 100%;
 }
 
-.footer-descr{
-    margin-top: 25px;
-    font-family: 'Jost', sans-serif;
-}
-
 .footer-social{
     display: flex;
     gap: 15px;
@@ -58,16 +53,6 @@
 .contact-text{
     color: #fff;
     font-family: 'Jost', sans-serif;
-    font-family: 'Jost', sans-serif;
-}
-
-.contacn-bold{
-    font-weight: 700;
-    font-family: 'Jost', sans-serif;
-}
-
-.contact-us span{
-    width: max-content;
     font-family: 'Jost', sans-serif;
 }
 

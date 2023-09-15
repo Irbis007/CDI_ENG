@@ -1,5 +1,4 @@
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -20,10 +19,10 @@ body button {
     overflow: hidden !important;
     width: max-content;
     padding: 26px 50px;
-    
+
     border-radius: 50px;
     border: none;
-    
+
     text-transform: uppercase;
     font-family: "Jost", sans-serif;
     color: #fff;
@@ -53,7 +52,7 @@ button:hover::after {
 }
 
 @media (max-width: 767px) {
-    body button{
+    body button {
         padding: 20px 20px;
     }
 }

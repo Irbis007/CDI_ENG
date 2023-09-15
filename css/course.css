@@ -1,7 +1,6 @@
-
-.course{
-    background: url('../images/course-bg.png') no-repeat center top;
-    padding: 100px 0 ;
+.course {
+    background: url("../images/course-bg.png") no-repeat center top;
+    padding: 100px 0;
 }
 
 .course-title {
@@ -14,11 +13,10 @@
     line-height: 110%;
     color: #333333;
     text-align: center;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
-
-.descr-wrapper{
+.descr-wrapper {
     margin-bottom: 40px;
 }
 
@@ -27,52 +25,53 @@
     max-width: 830px;
     margin: 0 auto;
     margin-top: 5px;
-    
+
     font-size: 19px;
     color: #666;
     text-align: center;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
-.courses-wrapper{
+.courses-wrapper {
     position: relative;
 }
 
-.courses-hidden{
+.courses-hidden {
     overflow: hidden;
 }
 
-.course-window{
-    display: flex; 
+.course-window {
+    display: flex;
     flex-wrap: nowrap;
     gap: 20px;
     padding: 40px;
     transition: all 1s;
 }
 
-.course-arrow{
+.course-arrow {
     position: absolute;
     top: 50%;
     right: -30px;
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer;
     z-index: 100;
 }
-.course-arrow:hover{
+.course-arrow:hover {
     box-shadow: 0px 0px 10px #ccc;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
-.course-arrow.prev{
+.course-arrow.prev {
     transform: rotate(180deg);
     left: -30px;
 }
 
-.course-arrow::after, .course-arrow::before{
-    content: '';
+.course-arrow::after,
+.course-arrow::before {
+    content: "";
     position: absolute;
     left: 50%;
     width: 2px;
@@ -80,134 +79,125 @@
     background: #000;
     border-radius: 1px;
     transform: translateX(-50%);
-    transition: all .2s;
+    transition: all 0.2s;
 }
-
-.course-arrow::after{
+.course-arrow::after {
     transform: rotate(215deg);
     bottom: 2px;
 }
-.course-arrow::before{
+.course-arrow::before {
     transform: rotate(-35deg);
     top: 2px;
 }
-
-.course-arrow:hover::after, .course-arrow:hover::before{
+.course-arrow:hover::after,
+.course-arrow:hover::before {
     background-image: linear-gradient(to top, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
-.course-wrapper{
+.course-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    width: 25% ;
+    width: 25%;
     height: auto;
     margin: 15px 0;
     padding: 15px 8px 20px;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
-.course-wrapper:hover{
+.course-wrapper:hover {
     box-shadow: 0px 0px 15px #888;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
-.course-icon{
+.course-icon {
     height: 75px;
     width: 75px;
 }
 
-.course-icon img{
+.course-icon img {
     width: 100%;
     height: 100%;
 }
 
-.course-text{
+.course-text {
     margin-top: 28px;
     text-align: center;
     font-size: 17px;
     line-height: 20px;
 }
 
-.course-text span{
+.course-text span {
     font-size: 12px;
     line-height: 13px;
 }
 
-.course-icon svg{
+.course-icon svg {
     height: 100%;
     width: 100%;
     fill: #2b5ff4;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
 @media (max-width: 991px) {
-    .course-title{
+    .course-title {
         font-size: 34px;
     }
-    .course-descr{
+    .course-descr {
         font-size: 17px;
     }
-    .course-clients{
+    .course-clients {
         padding: 8px;
         font-size: 16px;
         max-width: 300px;
     }
-    .course-wrapper{
+    .course-wrapper {
         width: 33%;
     }
 }
 
-
 @media (max-width: 767px) {
-    .course-wrapper{
+    .course-wrapper {
         gap: 9px;
     }
-    .course-title{
+    .course-title {
         font-size: 28px;
     }
-    .course-clients{
-        padding: 8px;
-        font-size: 14px;
-        max-width: 100%;
-    }
-    .course-wrapper{
+
+    .course-wrapper {
         width: 50%;
     }
-    .course-descr{
+    .course-descr {
         font-size: 15px;
     }
-    .course-text{
+    .course-text {
         font-size: 15px;
         line-height: 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .course-clients{
-        width: 100%;
-    }
-    .courses-wrapper{
+    .courses-wrapper {
         padding: 0 30px;
     }
-    .course-wrapper{
+    .course-wrapper {
         width: 100%;
         padding: 15px;
         margin: 15px;
     }
-    .course-arrow{
+    .course-arrow {
         right: 0;
     }
-    .course-arrow.prev{
+    .course-arrow.prev {
         left: 0;
     }
-    .course-text{
+    .course-text {
         font-size: 13px;
     }
-    .course-text span{
+    .course-text span {
         font-size: 11px;
     }
 }

@@ -1,4 +1,4 @@
-.knowledges{
+.knowledges {
     position: relative;
     background-image: linear-gradient(to right bottom, #070707, #3d3d3d);
     padding: 140px 0;
@@ -68,7 +68,7 @@
     font-size: 15px;
     line-height: 16px;
     font-family: "Jost", sans-serif;
-    list-style:disc;
+    list-style: disc;
 }
 
 .knowledge:hover .knowledge-icon {
@@ -91,7 +91,7 @@
     height: 50%;
 }
 
-.knowledges-subtitle{
+.knowledges-subtitle {
     margin-top: 30px;
     width: max-content;
     background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
@@ -119,7 +119,7 @@
     margin-top: 20px;
 }
 
-.knowledges-button{
+.knowledges-button {
     margin-top: 30px;
 }
 
@@ -166,7 +166,6 @@
 }
 
 @media (max-width: 1200px) {
-
     .knowledge-icon {
         width: 40px;
         height: 40px;
@@ -195,18 +194,18 @@
     }
     .knowledges-title {
         font-size: 40px;
-        margin: 20px 0 0 0 ;
+        margin: 20px 0 0 0;
         order: 1;
     }
-    .knowledges-descr{
+    .knowledges-descr {
         order: 2;
         font-size: 17px;
     }
-    .knowledges-subtitle{
+    .knowledges-subtitle {
         margin-top: 20px;
         order: 4;
     }
-    .knowledges-button{
+    .knowledges-button {
         order: 3;
     }
     .knowledge {
@@ -221,11 +220,12 @@
         line-height: 120%;
         margin-top: 20px;
     }
-    .knowledge-text{
+    .knowledge-text {
         display: flex;
         flex-direction: column;
     }
 }
+
 @media (max-width: 767px) {
     .knowledges-title {
         font-size: 28px;
@@ -250,5 +250,4 @@
     .knowledges-descr {
         font-size: 15px;
     }
-    
 }

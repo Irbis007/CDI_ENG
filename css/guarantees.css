@@ -1,75 +1,72 @@
-
-
-
-.guarantees{
+.guarantees {
     background: url(../images/guarantees-bg.png) center center / cover no-repeat;
     position: relative;
     padding: 140px 0 138px;
 }
 
-.guarantees-title{
-    font-family: 'Jost', sans-serif;
+.guarantees-title {
+    font-family: "Jost", sans-serif;
     font-size: 42px;
     text-align: center;
     font-weight: 700;
 }
-.guarantees-descr{
+.guarantees-descr {
     font-size: 19px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 30px;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
-.guarantee-wrapper{
+.guarantee-wrapper {
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
 
-.guarantee-icon{
+.guarantee-icon {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
     margin: 0 auto;
 }
 
-.guarantee-icon img{
+.guarantee-icon img {
     width: 100%;
     height: 100%;
 }
 
-.guarantee-title{
+.guarantee-title {
     font-weight: 700;
     font-size: 22px;
     color: #4f8aff;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
-.guarantee-descr{
+.guarantee-descr {
     font-size: 19px;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
 @media (max-width: 991px) {
-    .guarantees-title{
+    .guarantees-title {
         font-size: 34px;
     }
-    .guarantees-descr{
+    .guarantees-descr {
         font-size: 17px;
     }
-    .guarantee-descr{
+    .guarantee-descr {
         font-size: 17px;
     }
 }
 
 @media (max-width: 767px) {
-    .guarantees-title{
+    .guarantees-title {
         font-size: 28px;
     }
-    .guarantees-descr{
+    .guarantees-descr {
         font-size: 15px;
     }
-    .guarantee-descr{
+    .guarantee-descr {
         font-size: 15px;
     }
 }

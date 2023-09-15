@@ -111,7 +111,6 @@
     top: 7px;
 }
 
-
 .advances {
     display: flex;
     flex-wrap: wrap;
@@ -142,7 +141,7 @@
 
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     color: #8f49f9;
 }
 .advance-number::after {
@@ -158,10 +157,10 @@
     animation-delay: 0s;
     animation-delay: 0.3s;
 }
-.advance:nth-child(2) .advance-number::after{
+.advance:nth-child(2) .advance-number::after {
     background: #e034ff;
 }
-.advance:nth-child(3) .advance-number::after{
+.advance:nth-child(3) .advance-number::after {
     background: #ffae00;
 }
 
@@ -250,9 +249,6 @@
     }
     .expert-descr {
         font-size: 15px;
-    }
-    .knowledges-subtitle{
-        margin-top: 20px;
     }
 }
 
