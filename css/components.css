@@ -122,13 +122,10 @@ button:hover::after {
 }
 
 @media (max-width: 576px) {
-    .slider-hidden {
-        margin: 0px 65px;
-    }
     .slider-arrow.next {
-        right: 15px;
+        right: -10px;
     }
     .slider-wrapper .slider-arrow.prev {
-        left: 15px;
+        left: -10px;
     }
 }

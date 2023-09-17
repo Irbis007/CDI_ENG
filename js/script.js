@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (window.innerWidth > 576 && window.innerWidth < 768) {
         createSlider(expertSliderWrapper, expertSliderItem, expertArrowPrev, expertArrowNext, 4);
     } else if (window.innerWidth < 577) {
-        createSlider(expertSliderWrapper, expertSliderItem, expertArrowPrev, expertArrowNext, 4);
+        createSlider(expertSliderWrapper, expertSliderItem, expertArrowPrev, expertArrowNext, 3);
     } 
     
 });

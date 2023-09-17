@@ -23,7 +23,6 @@
 
 .expert .expert-tab_block{
     display: none ;
-    min-height: 618px;
 }
 
 .expert-tab_block.active{
@@ -303,7 +302,21 @@
         z-index: 100;
     }
     .expert-slider_img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
+    }
+    .expert .slider-wrapper{
+        margin-top: 30px;
+    }
+    .expert .slider-hidden{
+        max-width: 210px;
+        padding-top: 15px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .expert .slider-window{
+        max-width: 180px;
+        padding: 0;
+        margin: 0 auto;
     }
 }
