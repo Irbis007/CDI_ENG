@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    width: 25%;
+    width: calc(25% - 15px);
     height: auto;
     margin: 15px 0;
     padding: 15px 8px 20px;
@@ -93,7 +93,7 @@
         max-width: 300px;
     }
     .course-wrapper {
-        width: 33%;
+        width: calc(33% - 11.5px);
     }
 }
 
@@ -104,9 +104,8 @@
     .course-title {
         font-size: 28px;
     }
-
     .course-wrapper {
-        width: 50%;
+        width: calc(50% - 10px);
     }
     .course-descr {
         font-size: 15px;
@@ -117,20 +116,10 @@
     }
 }
 
-@media (max-width: 480px) {
-    .courses-wrapper {
-        padding: 0 30px;
-    }
+@media (max-width: 576px) {
     .course-wrapper {
         width: 100%;
         padding: 15px;
-        margin: 15px;
-    }
-    .course-arrow {
-        right: 0;
-    }
-    .course-arrow.prev {
-        left: 0;
     }
     .course-text {
         font-size: 13px;

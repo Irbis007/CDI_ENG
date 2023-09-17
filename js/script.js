@@ -32,6 +32,34 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    const expertSliderTabs = document.querySelectorAll(".expert-slider-content");
+    const expertSliderContent = document.querySelectorAll(".expert-tab_block");
+
+    function expertSldierTabs(i, numberOfSliderContent, sliderTabs, sliderContent) {
+        for (let i = 0; i < sliderTabs.length; i++) {
+            sliderTabs[i].classList.remove("active");
+            if (sliderContent[i]) {
+                sliderContent[i].classList.remove("active");
+            }
+        }
+        expertSliderTabs[i].classList.add("active");
+        expertSliderContent[numberOfSliderContent].classList.add("active");
+    }
+
+    expertSliderTabs.forEach((item, i) => {
+        item.addEventListener("click", () => {
+            if (((i + 1) / 4).toString().slice(2) == "25") {
+                expertSldierTabs(i, 0, expertSliderTabs, expertSliderContent);
+            } else if (((i + 1) / 4).toString().slice(2) == "5") {
+                expertSldierTabs(i, 1, expertSliderTabs, expertSliderContent);
+            } else if (((i + 1) / 4).toString().slice(2) == "75") {
+                expertSldierTabs(i, 2, expertSliderTabs, expertSliderContent);
+            } else {
+                expertSldierTabs(i, 3, expertSliderTabs, expertSliderContent);
+            }
+        });
+    });
+
     addActiveExpert(firstExpertTabButtons, firstExpertTabContents);
     addActiveExpert(secondExpertTabButtons, secondExpertTabContents);
 
@@ -85,19 +113,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function startObserve(arrOfNumber, listOfNumberWrapper, numberParrent) {
-        function handleIntersection(entries, observer) {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    listOfNumberWrapper.forEach((item, i) => {
-                        outNum(arrOfNumber[i], item);
-                    });
-                    observer.unobserve(numberParrent);
-                }
-            });
-        }
+        if (listOfNumberWrapper && numberParrent && arrOfNumber) {
+            function handleIntersection(entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        listOfNumberWrapper.forEach((item, i) => {
+                            outNum(arrOfNumber[i], item);
+                        });
+                        observer.unobserve(numberParrent);
+                    }
+                });
+            }
 
-        const observer = new IntersectionObserver(handleIntersection);
-        observer.observe(numberParrent);
+            const observer = new IntersectionObserver(handleIntersection);
+            observer.observe(numberParrent);
+        }
     }
 
     startObserve(
@@ -112,105 +142,54 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     // SLIDER
+    function createSlider(sliderWrapper, sliderItem, arrowPrev, arrowNext, itemShow) {
+        let stepWidth = sliderItem[0].clientWidth + 20;
+
+        let sliderStep = 0;
+
+        arrowPrev.addEventListener("click", () => {
+            if (sliderStep > 0) {
+                sliderStep--;
+            }
+            sliderWrapper.style.transform = `translateX(${-sliderStep * stepWidth}px)`;
+        });
+
+        arrowNext.addEventListener("click", () => {
+            if (sliderStep <= sliderItem.length - itemShow) {
+                sliderStep++;
+            }
+            sliderWrapper.style.transform = `translateX(${-sliderStep * stepWidth}px)`;
+        });
+    }
+
     const sliderWrapper = document.querySelector(".course .slider-window");
     const sliderItem = document.querySelectorAll(".course .course-wrapper");
-
     const arrowPrev = document.querySelector(".course .slider-arrow.prev");
     const arrowNext = document.querySelector(".course .slider-arrow.next");
-
-    let stepWidth;
-
     if (window.innerWidth > 991) {
-        stepWidth = sliderItem[0].clientWidth + 40;
-    } else if (window.innerWidth > 767 && window.innerWidth < 991) {
-        stepWidth = sliderItem[0].clientWidth + 30;
-    } else if (window.innerWidth > 576 && window.innerWidth < 767) {
-        stepWidth = sliderItem[0].clientWidth + 20;
-    } else if (window.innerWidth < 576) {
-        stepWidth = sliderItem[0].clientWidth + 18 + 33;
-    }
+        createSlider(sliderWrapper, sliderItem, arrowPrev, arrowNext, 5);
+    } else if (window.innerWidth > 767 && window.innerWidth < 992) {
+        createSlider(sliderWrapper, sliderItem, arrowPrev, arrowNext, 4);
+    } else if (window.innerWidth > 576 && window.innerWidth < 768) {
+        createSlider(sliderWrapper, sliderItem, arrowPrev, arrowNext, 3);
+    } else if (window.innerWidth < 577) {
+        createSlider(sliderWrapper, sliderItem, arrowPrev, arrowNext, 2);
+    } 
 
-    let sliderStep = 0;
-
-    arrowPrev.addEventListener("click", () => {
-        if (sliderStep > 0) {
-            sliderStep--;
-        }
-        console.log(1);
-        sliderWrapper.style.transform = `translateX(${-sliderStep * stepWidth}px)`;
-    });
-    
-
-    arrowNext.addEventListener("click", () => {
-        if (window.innerWidth > 991) {
-            if (sliderStep <= sliderItem.length - 5) {
-                sliderStep++;
-            }
-        } else if (window.innerWidth > 767 && window.innerWidth < 991) {
-            if (sliderStep <= sliderItem.length - 4) {
-                sliderStep++;
-            }
-        } else if (window.innerWidth > 576 && window.innerWidth < 767) {
-            if (sliderStep <= sliderItem.length - 3) {
-                sliderStep++;
-            }
-        } else if (window.innerWidth < 576) {
-            if (sliderStep <= sliderItem.length - 2) {
-                sliderStep++;
-            }
-        }
-        sliderWrapper.style.transform = `translateX(${-sliderStep * stepWidth}px)`;
-    });
-
-
-    const experSliderWrapper = document.querySelector(".expert .slider-window");
-    const experSliderItem = document.querySelectorAll(".expert .expert-slider_content");
-
-    const experArrowPrev = document.querySelector(".expert .slider-arrow.prev");
+    const expertSliderWrapper = document.querySelector(".expert .slider-window");
+    const expertSliderItem = document.querySelectorAll(".expert .expert-slider-content");
+    const expertArrowPrev = document.querySelector(".expert .slider-arrow.prev");
     const expertArrowNext = document.querySelector(".expert .slider-arrow.next");
-
-
-    let expertStepWidth;
-
-    if (window.innerWidth > 991) {
-        expertStepWidth = experSliderItem[0].clientWidth + 40;
-    } else if (window.innerWidth > 767 && window.innerWidth < 991) {
-        expertStepWidth = experSliderItem[0].clientWidth + 30;
-    } else if (window.innerWidth > 576 && window.innerWidth < 767) {
-        expertStepWidth = experSliderItem[0].clientWidth + 20;
-    } else if (window.innerWidth < 576) {
-        expertStepWidth = experSliderItem[0].clientWidth + 18 + 33;
-    }
-
-    let experSliderStep = 0;
-
-    experArrowPrev.addEventListener("click", () => {
-        if (experSliderStep > 0) {
-            experSliderStep--;
-        }
-        experSliderWrapper.style.transform = `translateX(${-experSliderStep * expertStepWidth}px)`;
-    });
+    if (window.innerWidth > 1200 ) {
+        createSlider(expertSliderWrapper, expertSliderItem, expertArrowPrev, expertArrowNext, 7);
+    } else if (window.innerWidth > 991 && window.innerWidth < 1201) {
+        createSlider(expertSliderWrapper, expertSliderItem, expertArrowPrev, expertArrowNext, 6);
+    } else if (window.innerWidth > 767 && window.innerWidth < 992) {
+        createSlider(expertSliderWrapper, expertSliderItem, expertArrowPrev, expertArrowNext, 5);
+    } else if (window.innerWidth > 576 && window.innerWidth < 768) {
+        createSlider(expertSliderWrapper, expertSliderItem, expertArrowPrev, expertArrowNext, 4);
+    } else if (window.innerWidth < 577) {
+        createSlider(expertSliderWrapper, expertSliderItem, expertArrowPrev, expertArrowNext, 4);
+    } 
     
-
-    expertArrowNext.addEventListener("click", () => {
-        if (window.innerWidth > 991) {
-            if (experSliderStep <= experSliderItem.length - 13) {
-                experSliderStep++;
-            }
-        } else if (window.innerWidth > 767 && window.innerWidth < 991) {
-            if (experSliderStep <= experSliderItem.length - 4) {
-                experSliderStep++;
-            }
-        } else if (window.innerWidth > 576 && window.innerWidth < 767) {
-            if (experSliderStep <= experSliderItem.length - 3) {
-                experSliderStep++;
-            }
-        } else if (window.innerWidth < 576) {
-            if (experSliderStep <= experSliderItem.length - 2) {
-                experSliderStep++;
-            }
-        }
-        experSliderWrapper.style.transform = `translateX(${-experSliderStep * expertStepWidth}px)`;
-    });
-
 });

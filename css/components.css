@@ -51,8 +51,6 @@ button:hover::after {
     transition: all 0.2s;
 }
 
-
-
 .slider-arrow {
     position: absolute;
     top: 50%;
@@ -73,7 +71,6 @@ button:hover::after {
 .slider-arrow.prev {
     transform: rotate(180deg) translateY(50%);
     left: -30px;
-    
 }
 
 .slider-arrow::after,
@@ -118,9 +115,20 @@ button:hover::after {
     transition: all 1s;
 }
 
-
 @media (max-width: 767px) {
     body button {
         padding: 20px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-hidden {
+        margin: 0px 65px;
+    }
+    .slider-arrow.next {
+        right: 15px;
+    }
+    .slider-wrapper .slider-arrow.prev {
+        left: 15px;
     }
 }
