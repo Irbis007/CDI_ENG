@@ -51,6 +51,74 @@ button:hover::after {
     transition: all 0.2s;
 }
 
+
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+    cursor: pointer;
+    z-index: 100;
+}
+.slider-arrow:hover {
+    box-shadow: 0px 0px 10px #ccc;
+    transition: all 0.2s;
+}
+
+.slider-arrow.prev {
+    transform: rotate(180deg) translateY(50%);
+    left: -30px;
+    
+}
+
+.slider-arrow::after,
+.slider-arrow::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 15px;
+    background: #000;
+    border-radius: 1px;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+}
+.slider-arrow::after {
+    transform: rotate(215deg);
+    bottom: 2px;
+}
+.slider-arrow::before {
+    transform: rotate(-35deg);
+    top: 2px;
+}
+.slider-arrow:hover::after,
+.slider-arrow:hover::before {
+    background-image: linear-gradient(to top, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    transition: all 0.2s;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-hidden {
+    overflow: hidden;
+}
+
+.slider-window {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 40px;
+    transition: all 1s;
+}
+
+
 @media (max-width: 767px) {
     body button {
         padding: 20px 20px;

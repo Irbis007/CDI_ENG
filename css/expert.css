@@ -169,6 +169,18 @@
     font-family: "Jost", sans-serif;
 }
 
+.expert-slider_content{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.expert-slider_content img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 @keyframes animActive {
     0% {
         opacity: 0;
