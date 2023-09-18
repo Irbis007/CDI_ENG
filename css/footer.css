@@ -65,6 +65,27 @@
 }
 
 
+.subfooter{
+    border-top: 1px solid #464646;
+    padding: 30px 0 ;
+}
+
+.subfooter-links_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.subfooter-link{
+    color: #fff;
+    opacity: .3;
+    font-family: 'Jost', sans-serif;
+}
+.subfooter-link:hover{
+    color: #fff;
+}
+
+
 @media (max-width: 767px) {
     .footer-title{
         margin-top: 60px;
