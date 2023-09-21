@@ -1,8 +1,7 @@
 .feedback {
     position: relative;
     margin-top: 100px;
-    background: url("../images/feedback-bg.jpg") center center no-repeat;
-    background-size: cover;
+    background: url("../images/feedback-bg.jpg") center center / cover no-repeat;
     padding: 140px 0 138px;
     z-index: 1;
     background-attachment: fixed;

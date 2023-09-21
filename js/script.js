@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const secondExpertTabButtons = document.querySelectorAll(".second-expert .tab-button");
     const secondExpertTabContents = document.querySelectorAll(".second-expert .tab-content");
 
+    const structureTabButtons = document.querySelectorAll(".structure .tab-button");
+    const structureTabContents = document.querySelectorAll(".structure .tab-content");
+
     function addActiveExpert(tabButtons, tabContent) {
         tabButtons.forEach((item, i) => {
             item.addEventListener("click", () => {
@@ -31,6 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
             tabContent[i].classList.remove("active");
         }
     }
+
+    addActiveExpert(firstExpertTabButtons, firstExpertTabContents);
+    addActiveExpert(secondExpertTabButtons, secondExpertTabContents);
+    addActiveExpert(structureTabButtons, structureTabContents);
 
     const expertSliderTabs = document.querySelectorAll(".expert-slider-content");
     const expertSliderContent = document.querySelectorAll(".expert-tab_block");
@@ -59,9 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-
-    addActiveExpert(firstExpertTabButtons, firstExpertTabContents);
-    addActiveExpert(secondExpertTabButtons, secondExpertTabContents);
 
     // FEEDBACK TAB
     const feedbackTabButtons = document.querySelectorAll(".feedback .tab-button");

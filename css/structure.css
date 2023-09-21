@@ -1,0 +1,159 @@
+
+.structure{
+    width: 100%;
+    background: url("../images/feedback-bg.jpg") center center / cover no-repeat;
+    background-attachment: fixed;
+    padding: 200px 0;
+}
+
+
+.structure-tabs{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.structure .tab-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.structure .tab-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background-color: #6b717412;
+    padding: 10px;
+    box-shadow: inset 0 0 20px #6b717467;
+    border: 2px solid #6b717467;
+    border-radius: 20px;
+
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    line-height: 110%;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.structure .tab-button:nth-child(1), .structure .tab-button:nth-child(5){
+    position: relative;
+    left: 245px;
+}
+.structure .tab-button:nth-child(2), .structure .tab-button:nth-child(4){
+    position: relative;
+    left: 165px;
+}
+.structure .tab-button:nth-child(3){
+    position: relative;
+    left: 85px;
+}
+
+.structure .tab-button > span, .structure .tab-content > span{
+    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 32px;
+    color: transparent;
+}
+
+.structure .tab-center{
+    position: relative;
+    right: -140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    border: 2px solid #6b7174;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.structure .center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    box-shadow: inset 0 0 30px #6b7174;
+    border: 2px solid #6b7174;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.structure .tab-contents{
+    min-width: 515px;
+}
+
+.structure .tab-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 0px;
+    max-height: 0px;
+    padding: 0;
+    background-color: #6b717412;
+    box-shadow: inset 0 0 20px #6b717467;
+    border: 2px solid #6b717467;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.structure .tab-content.active{
+    max-width: 514px;
+    max-height: 648px;
+    padding: 50px 130px;
+    transition: all .5s;
+}
+
+.structure .content-title{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: max-content;
+}
+
+.structure .content-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: max-content;
+}
+
+.structure .content-item{
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    max-width: 250px;
+    font-weight: 300;
+    list-style-position: inside;
+    /* padding-left: 10px; */
+}
+
+.structure .content-item span{
+    font-weight: 900;
+}
+
+.structure .content-item::before{
+    content: '-';
+    padding-right: 2px;
+}
