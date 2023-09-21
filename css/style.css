@@ -11,4 +11,9 @@
 @import url('./footer.css');
 @import url('./components.css');
 @import url('./structure.css');
+@import url('./schedule.css');
+
+body{
+    overflow-x: hidden;
+}
 
