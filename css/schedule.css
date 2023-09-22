@@ -2,17 +2,35 @@
     padding: 100px 0;
 }
 
+.schedule-title{
+    text-align: center;
+    background-clip: text;
+    background-image: linear-gradient( #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    color: transparent;
+}
+
+.schedule-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.schedule-list .item{
+    position: relative;
+    min-width: 150px;
+    width: max-content;
+    padding: 3px 44px 3px 0;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+}
+ 
 .schedule-body {
     display: flex;
     gap: 5px;
-}
-
-.schedule-border {
-    width: calc(20% - 4px);
-    flex-shrink: 0;
-    border-radius: 10px;
-    padding: 2px;
-    overflow: hidden;
+    margin-top: 30px;
 }
 
 .schedule-wrapper {
@@ -45,7 +63,8 @@
 .schedule-wrapper:nth-child(1) .schedule-content:nth-child(2)::before,
 .schedule-wrapper:nth-child(1) .schedule-content:nth-child(3)::before,
 .schedule-wrapper:nth-child(5) .schedule-content:nth-child(2)::before,
-.schedule-wrapper:nth-child(5) .schedule-content:nth-child(3)::before {
+.schedule-wrapper:nth-child(5) .schedule-content:nth-child(3)::before,
+.schedule-list .item::before {
     content: "";
     position: absolute;
     width: 100vw;
@@ -55,7 +74,8 @@
 }
 
 .schedule-wrapper:nth-child(1) .schedule-content:nth-child(2)::before,
-.schedule-wrapper:nth-child(1) .schedule-content:nth-child(3)::before {
+.schedule-wrapper:nth-child(1) .schedule-content:nth-child(3)::before,
+.schedule-list .item::before {
     right: 0;
 }
 
@@ -81,6 +101,23 @@
     z-index: -1;
     box-shadow: inset -6px 0px 6px -5px rgba(0, 0, 0, 0.38);
 }
+
+.schedule-list .item:nth-child(1)::before{
+    background: linear-gradient(to right,#7b8ef3 90%,  #fff);
+}
+.schedule-list .item:nth-child(2)::before{
+    background: linear-gradient(to right,#6038aa 90%,  #fff);
+}
+.schedule-list .item:nth-child(3)::before{
+    background: linear-gradient(to right,#3444a7 90%,  #fff);
+}
+.schedule-list .item:nth-child(4)::before{
+    background: linear-gradient(to right,#429efc 90%,  #fff);
+}
+.schedule-list .item:nth-child(5)::before{
+    background: linear-gradient(to right,#8a6eeb 90%,  #fff);
+}
+
 
 .schedule-wrapper:nth-child(1) .schedule-content:nth-child(2),
 .schedule-wrapper:nth-child(5) .schedule-content:nth-child(2),

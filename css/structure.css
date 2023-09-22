@@ -1,13 +1,121 @@
-
-.structure{
+.structure {
     width: 100%;
     background: url("../images/feedback-bg.jpg") center center / cover no-repeat;
     background-attachment: fixed;
-    padding: 200px 0;
+    padding: 50px 0 200px 0;
 }
 
+.structure-subtitle{
+    width: 100%;
+    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 23px;
+    text-align: center;
+    color: transparent;
+    font-family: "Jost", sans-serif;
+}
 
-.structure-tabs{
+.structure-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.structure-table {
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    border-collapse: unset;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+}
+
+.structure-table td,
+.structure-table .table-head {
+    padding: 5px 15px;
+}
+
+.structure-table .table-head {
+    color: #0985f9;
+}
+
+.structure-table .body-row,
+.structure-table .table-head {
+    display: flex;
+}
+
+.structure-table .body-cell,
+.structure-table .head-item {
+    width: 200px;
+    height: 60px;
+    padding: 5px 15px;
+}
+
+.structure-table .body-row:nth-child(1) {
+    border-width: 6px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(
+            to left,
+            #0985f900,
+            #6809dc,
+            #4d40ea,
+            #2f5cf3,
+            #0b72f8,
+            #0985f9,
+            #0985f9,
+            #0b72f8,
+            #2f5cf3,
+            #4d40ea,
+            #6809dc,
+            #0985f900
+        )
+        1;
+}
+
+.structure-table .body-row .body-cell, .structure-table .table-head .head-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.structure-table .body-row:nth-child(2) .body-cell{
+    gap: 10px;
+}
+
+.structure-table .body-row:nth-child(2) .body-cell span{
+    display: block;
+    width: max-content;
+    transform: rotate(-90deg);
+}
+
+.structure-table .body-row:nth-child(1) .body-cell:nth-child(1),
+.structure-table .body-row:nth-child(2) .body-cell:nth-child(1),
+.structure-table .body-row:nth-child(1) .body-cell:nth-child(2),
+.structure-table .body-row:nth-child(2) .body-cell:nth-child(2) {
+    border-width: 6px;
+    border-right-style: solid;
+}
+
+.structure-table .body-row:nth-child(1) .body-cell:nth-child(1),
+.structure-table .body-row:nth-child(1) .body-cell:nth-child(2) {
+    border-image: linear-gradient(to top, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc, #0985f900) 1
+        100%;
+}
+.structure-table .body-row:nth-child(2) .body-cell:nth-child(1),
+.structure-table .body-row:nth-child(2) .body-cell:nth-child(2) {
+    border-image: linear-gradient(to bottom, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc, #0985f900) 1
+    100%;
+}
+
+.structure-tabs {
     position: relative;
     display: flex;
     align-items: center;
@@ -16,13 +124,13 @@
     width: 100%;
 }
 
-.structure .tab-buttons{
+.structure .tab-buttons {
     display: flex;
     flex-direction: column;
     gap: 17px;
 }
 
-.structure .tab-button{
+.structure .tab-button {
     position: relative;
     display: flex;
     align-items: center;
@@ -34,40 +142,42 @@
     border: 2px solid #6b717467;
     border-radius: 20px;
 
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     font-weight: 500;
     line-height: 110%;
     color: #fff;
     cursor: pointer;
-
 }
 
-.structure .tab-button:nth-child(1), .structure .tab-button:nth-child(5){
+.structure .tab-button:nth-child(1),
+.structure .tab-button:nth-child(5) {
     position: relative;
     left: 245px;
 }
-.structure .tab-button:nth-child(2), .structure .tab-button:nth-child(4){
+.structure .tab-button:nth-child(2),
+.structure .tab-button:nth-child(4) {
     position: relative;
     left: 165px;
 }
-.structure .tab-button:nth-child(3){
+.structure .tab-button:nth-child(3) {
     position: relative;
     left: 85px;
 }
 
-.structure .tab-button > span, .structure .tab-content > span{
+.structure .tab-button > span,
+.structure .tab-content > span {
     background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     font-weight: 800;
     font-size: 32px;
     line-height: 32px;
     color: transparent;
 }
 
-.structure .tab-center{
+.structure .tab-center {
     position: relative;
     right: -140px;
     display: flex;
@@ -81,7 +191,7 @@
     z-index: 10;
 }
 
-.structure .center-content{
+.structure .center-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,11 +204,11 @@
     color: #fff;
 }
 
-.structure .tab-contents{
+.structure .tab-contents {
     min-width: 515px;
 }
 
-.structure .tab-content{
+.structure .tab-content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -113,18 +223,18 @@
     border: 2px solid #6b717467;
     border-radius: 50%;
     overflow: hidden;
-    transition: all .5s;
+    transition: all 0.5s;
     z-index: 1;
 }
 
-.structure .tab-content.active{
+.structure .tab-content.active {
     max-width: 514px;
     max-height: 648px;
     padding: 50px 130px;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
-.structure .content-title{
+.structure .content-title {
     text-align: center;
     color: #fff;
     font-weight: 700;
@@ -132,14 +242,14 @@
     width: max-content;
 }
 
-.structure .content-list{
+.structure .content-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: max-content;
 }
 
-.structure .content-item{
+.structure .content-item {
     position: relative;
     color: #fff;
     font-size: 14px;
@@ -149,11 +259,11 @@
     /* padding-left: 10px; */
 }
 
-.structure .content-item span{
+.structure .content-item span {
     font-weight: 900;
 }
 
-.structure .content-item::before{
-    content: '-';
+.structure .content-item::before {
+    content: "-";
     padding-right: 2px;
 }
