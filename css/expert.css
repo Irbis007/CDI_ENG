@@ -71,6 +71,39 @@
     width: 100%;
 }
 
+.expert-video{
+    position: relative;
+    left: -30px;
+    top: -200px;
+    max-width: 400px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
+}
+
+.expert-video > img{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
+.expert-video .video-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.expert-video .video-button img{
+    width: 100%;
+    height: 100%;
+}
+
 .expert-subtitle {
     width: max-content;
     background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
