@@ -160,3 +160,43 @@
         font-size: 13px;
     }
 }
+
+@media (max-width: 576px) {
+    .schedule-list .item{
+        font-size: 12px;
+        padding-right: 20px;
+    }
+    .schedule-wrapper .schedule-content::before,
+    .schedule-wrapper .schedule-content::after{
+        display: none;
+    }
+    .schedule-body {
+        flex-direction: column;
+    }
+    .schedule-day{
+        position: relative;
+        bottom: 50%;
+        transform: translateY(50%);
+        margin: 0;
+        padding: 30px 5px;
+    }
+    .schedule-wrapper{
+        height: 150px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        gap: 5px;
+        margin-left: -30px;
+        padding-left: 20px;
+    }
+    .schedule-content{
+        max-width: 140px; 
+    }
+    .schedule-content:nth-child(3){
+        height: 90%;
+    }
+    .schedule-content:nth-child(2){
+        height: 70%;
+        margin-right: auto;
+    }
+}

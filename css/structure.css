@@ -1,11 +1,13 @@
 .structure {
+    position: relative;
     width: 100%;
     background: url("../images/feedback-bg.jpg") center center / cover no-repeat;
     background-attachment: fixed;
     padding: 50px 0 200px 0;
+    overflow: hidden;
 }
 
-.structure-subtitle{
+.structure-subtitle {
     width: 100%;
     background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
     background-clip: text;
@@ -17,13 +19,13 @@
     font-family: "Jost", sans-serif;
 }
 
-.structure-title{
+.structure-title {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
     margin-top: 30px;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: 18px;
     color: #fff;
 }
@@ -34,13 +36,8 @@
     margin-top: 30px;
     margin-bottom: 150px;
     border-collapse: unset;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     color: #fff;
-}
-
-.structure-table td,
-.structure-table .table-head {
-    padding: 5px 15px;
 }
 
 .structure-table .table-head {
@@ -80,17 +77,18 @@
         1;
 }
 
-.structure-table .body-row .body-cell, .structure-table .table-head .head-item{
+.structure-table .body-row .body-cell,
+.structure-table .table-head .head-item {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.structure-table .body-row:nth-child(2) .body-cell{
+.structure-table .body-row:nth-child(2) .body-cell {
     gap: 10px;
 }
 
-.structure-table .body-row:nth-child(2) .body-cell span{
+.structure-table .body-row:nth-child(2) .body-cell span {
     display: block;
     width: max-content;
     transform: rotate(-90deg);
@@ -111,8 +109,8 @@
 }
 .structure-table .body-row:nth-child(2) .body-cell:nth-child(1),
 .structure-table .body-row:nth-child(2) .body-cell:nth-child(2) {
-    border-image: linear-gradient(to bottom, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc, #0985f900) 1
-    100%;
+    border-image: linear-gradient(to bottom, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc, #0985f900)
+        1 100%;
 }
 
 .structure-tabs {
@@ -147,6 +145,7 @@
     line-height: 110%;
     color: #fff;
     cursor: pointer;
+    z-index: 100;
 }
 
 .structure .tab-button:nth-child(1),
@@ -164,8 +163,8 @@
     left: 85px;
 }
 
-.structure .tab-button > span,
-.structure .tab-content > span {
+.structure .tab-button >  span,
+.structure .tab-content .content-wrapper > span {
     background-image: linear-gradient(to left, #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -183,6 +182,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 170px;
     height: 170px;
     padding: 10px;
@@ -227,6 +227,12 @@
     z-index: 1;
 }
 
+.structure .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .structure .tab-content.active {
     max-width: 514px;
     max-height: 648px;
@@ -266,4 +272,140 @@
 .structure .content-item::before {
     content: "-";
     padding-right: 2px;
+}
+
+@media (max-width: 767px) {
+    .structure{
+        padding-bottom: 300px;
+    }
+    .structure-table{
+        margin-bottom: 0;
+    }
+    .structure-table .body-cell,
+    .structure-table .head-item{
+        width: 125px;
+    }
+    .structure-tabs {
+        flex-direction: column;
+        position: static;
+    }
+    .structure .tab-center {
+        right: 0;
+        top: -30px;
+    }
+    .structure .tab-contents {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .structure .tab-content{
+        left: 50%;
+    }
+    .structure .tab-content.active {
+        position: relative;
+        top: unset;
+        left: 50%;
+        bottom: -390px;
+        max-width: 1000px;
+        width: 1000px;
+        max-height: 1000px;
+        padding-bottom: 400px;
+        transform: translateX(-50%);
+    }
+    .structure .content-list {
+        gap: 0;
+    }
+    .structure .content-item {
+        max-width: 450px;
+    }
+    .structure .tab-buttons{
+        width: 100%;
+    }
+    .structure .tab-button{
+        width: 180px;
+    }
+    .structure .tab-button:nth-child(1) {
+        position: relative;
+        left: 0px;
+        top: 292px;
+    }
+    .structure .tab-button:nth-child(2){
+        position: relative;
+        left: 30%;
+        transform: translateX(-50%);
+        top: 146px;
+    }
+    .structure .tab-button:nth-child(3) {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .structure .tab-button:nth-child(4){
+        left: 75%;
+        transform: translateX(-55%);
+    }
+    .structure .tab-button:nth-child(5){
+        left: 100%;
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (max-width: 576px) {
+    .structure-table .body-cell,
+    .structure-table .head-item{
+        width: 101px;
+        font-size: 12px;
+    }
+    .structure-table .body-row:nth-child(2) .body-cell{
+        gap: 3px;
+    }
+    .structure .tab-buttons{
+        position: relative;
+        bottom: -40px;
+    }
+    .structure .tab-center{
+        margin: 40px 0 75px 0;
+        width: 130px;
+        height: 130px;
+    }
+    .structure .tab-contents{
+        min-width: unset;
+    }
+    .structure .tab-content.active{
+        position: absolute;
+        left: 50%;
+        right: 0;
+        padding: 50px 10px;
+        padding-bottom: 400px;
+        transform: translateX(-50%);
+    }
+    .structure .content-wrapper{
+        min-width: 320px;
+        max-width: 400px;
+        width: 100%;
+    }
+    .structure .content-list{
+        width: 100%;
+    }
+    .structure .content-item {
+
+        max-width: 90%;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .structure .content-wrapper{
+        max-width: 320px;
+    }
+    .structure .tab-button{
+        width: 135px;
+        font-size: 12px;
+    }
+    .structure .tab-button span{
+        font-size: 23px;
+    }
 }
