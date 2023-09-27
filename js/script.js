@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const structureTabButtons = document.querySelectorAll(".structure .tab-button");
     const structureTabContents = document.querySelectorAll(".structure .tab-content");
-
+ 
     function addActiveExpert(tabButtons, tabContent) {
         tabButtons.forEach((item, i) => {
             item.addEventListener("click", () => {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     addActiveExpert(firstExpertTabButtons, firstExpertTabContents);
     addActiveExpert(secondExpertTabButtons, secondExpertTabContents);
-    addActiveExpert(structureTabButtons, structureTabContents);
+    addActiveExpert(structureTabButtons, structureTabContents); 
 
     const expertSliderTabs = document.querySelectorAll(".expert-slider-content");
     const expertSliderContent = document.querySelectorAll(".expert-tab_block");

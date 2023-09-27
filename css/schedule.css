@@ -37,7 +37,7 @@
 
 .schedule-wrapper {
     width: 100%;
-    height: 500px;
+    height: 360px;
     background: linear-gradient(#fff, #fff) padding-box,
         linear-gradient( #0985f9, #0b72f8, #2f5cf3, #4d40ea, #6809dc) border-box;
     border-radius: 10px;

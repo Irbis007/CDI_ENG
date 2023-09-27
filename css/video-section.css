@@ -1,0 +1,8 @@
+
+.video-section{
+    position: relative;
+    background-color: rgb(250, 136, 136);
+    margin-top: -88px;
+    padding-top: 88px;
+    z-index: -1;
+}

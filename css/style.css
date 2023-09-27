@@ -12,6 +12,8 @@
 @import url('./components.css');
 @import url('./structure.css');
 @import url('./schedule.css');
+@import url('./video-section.css');
+
 
 body{
     overflow-y: scroll;
