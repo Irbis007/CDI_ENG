@@ -178,7 +178,7 @@
 }
 
 .structure .tab-button.active{
-    filter: drop-shadow(0px 1px 54px  rgba(47, 84, 238, 0.46));
+    filter: drop-shadow(0px 1px 24px rgb(53, 92, 255));
 }
 
 .structure .tab-center {
@@ -267,7 +267,6 @@
     max-width: 250px;
     font-weight: 300;
     list-style-position: inside;
-    /* padding-left: 10px; */
 }
 
 .structure .content-item span {

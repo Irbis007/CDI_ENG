@@ -1,7 +1,9 @@
 .intro {
+    position: relative;
     background: url("../images/intro-bg.jpg") center center/ cover  no-repeat;
     width: 100%;
     padding: 275px 0 210px 0;
+    z-index: 10;
 }
 
 .intro h1, .intro p, .intro button{
